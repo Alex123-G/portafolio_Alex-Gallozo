@@ -233,6 +233,7 @@ body {
   position: absolute;
   opacity: 0;
   font-size: 14pt;
+  text-align: center;
 }
 
 .html {
@@ -241,46 +242,72 @@ body {
 }
 
 .css {
-  top: 47px;
-  left: 45px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .javascript {
-  top: 47px;
-  left: 22px;
+  /* top: 47px;
+  left: 20px; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .mysql {
-  top: 47px;
-  left: 38px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .git {
-  top: 47px;
-  left: 49px;
+  /* top: 47px;
+  left: 49px; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .github {
-  top: 47px;
-  left: 32px;
+  /* top: 47px;
+  left: 32px; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .java {
-  top: 47px;
-  left: 44px;
+  /* top: 47px;
+  left: 44px; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .bootstrap {
-  top: 47px;
-  left: 20px;
+  /* top: 47px;
+  left: 20px; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .c_sharp {
-  top: 47px;
-  left: 50px;
+  /* top: 47px;
+  left: 50px; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .sql_server {
-  top: 47px;
-  left: 22px;
+  /* top: 47px;
+  left: 22px; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .firebase {
-  top: 47px;
-  left: 24px;
+  /* top: 47px;
+  left: 26px; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .container-img img {
   width: 90px;
