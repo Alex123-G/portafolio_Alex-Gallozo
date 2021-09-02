@@ -428,23 +428,31 @@ body {
   .header {
     background-color: #1c1c1d;
     width: 100%;
-    height: 40px;
+    height: 43px;
     position: fixed;
     grid-area: header;
     overflow: hidden;
-    z-index: 100;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    line-height: 35px;
+    z-index: 100;
 
     /*Colocar el z-index para que este mas adelante y no se tape por el efecto hover cuando se pasa el mouse*/
+  }
+  .nav__toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 2.05rem;
+    cursor: pointer;
+    display: block;
+    margin-top: 3px;
   }
   .logo__nav {
     color: #fbfbfb;
     font-size: 15pt;
-    margin: 5px 0px;
+    margin: 3px 0;
     font-weight: bold;
   }
 
@@ -509,14 +517,7 @@ body {
     background: none;
     opacity: 0.4;
   }
-  .nav__toggle {
-    color: white;
-    background: none;
-    border: none;
-    font-size: 2.05rem;
-    cursor: pointer;
-    display: block;
-  }
+
   .inicio {
     grid-area: inicio;
     background-image: url(img/background_opcion4.jpeg);
@@ -647,5 +648,4 @@ body {
   transition: opacity 0.7s;
   color: #ffff;
   opacity: 1;
-  z-index: 100;
 }
