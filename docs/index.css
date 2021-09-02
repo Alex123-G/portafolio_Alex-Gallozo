@@ -232,12 +232,12 @@ body {
 .efecto_hover {
   position: absolute;
   opacity: 0;
-  font-size: 17pt;
+  font-size: 14pt;
 }
 
 .html {
   top: 47px;
-  left: 38px;
+  left: 39px;
 }
 
 .css {
@@ -246,29 +246,29 @@ body {
 }
 .javascript {
   top: 47px;
-  left: 14px;
+  left: 22px;
 }
 
 .mysql {
   top: 47px;
-  left: 30px;
+  left: 38px;
 }
 .git {
   top: 47px;
-  left: 46px;
+  left: 49px;
 }
 .github {
   top: 47px;
-  left: 26px;
+  left: 32px;
 }
 .java {
   top: 47px;
-  left: 40px;
+  left: 44px;
 }
 
 .bootstrap {
   top: 47px;
-  left: 13px;
+  left: 20px;
 }
 .c_sharp {
   top: 47px;
@@ -276,11 +276,11 @@ body {
 }
 .sql_server {
   top: 47px;
-  left: 11px;
+  left: 18px;
 }
 .firebase {
   top: 47px;
-  left: 20px;
+  left: 24px;
 }
 .container-img img {
   width: 90px;
@@ -595,17 +595,6 @@ body {
   }
   .sobre_mi-info-h5 {
     padding-left: 8px;
-  }
-  .container-img {
-    background-color: #2c2d2e;
-    border-radius: 18px;
-    margin: 10px 5px;
-    position: relative;
-  }
-  .logo-habilidades {
-    width: 100px;
-    height: 100px;
-    position: relative;
   }
 
   .ejemploContenedor-texto {
