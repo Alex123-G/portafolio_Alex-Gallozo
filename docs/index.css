@@ -361,12 +361,12 @@ body {
 }
 
 .portafolio-container-card:hover .portafolio__container-img {
-  transition: border-bottom 0.4s;
+  transition: border-bottom 0.2s;
   border-bottom: 1px solid #80cc06;
   opacity: 0.2;
 }
 .portafolio-container-card:hover .titulo-card__portafolio {
-  transition: text-decoration 0.4s;
+  transition: text-decoration 0.2s;
   text-decoration: 2px underline #80cc06;
 }
 
@@ -411,7 +411,7 @@ body {
 .contactame__caja:hover {
   background-color: #2a2a2f;
   opacity: 0.7;
-  transition: opacity 0.4s;
+  transition: opacity 0.2s;
 }
 .footer {
   grid-area: footer;
@@ -482,7 +482,7 @@ body {
     width: 100%;
     height: 100%;
     left: 100%;
-    transition: left 1.4s;
+    transition: left 1s;
   }
 
   .nav__header_visible {
@@ -495,7 +495,7 @@ body {
     width: 100%;
     height: 100%;
     left: 0;
-    transition: left 1.4s;
+    transition: left 1s;
   }
 
   .ul__nav {
@@ -612,8 +612,7 @@ body {
     text-decoration: underline #80cc06;
   }
   .sobre_mi__container-img {
-    /* width: 100%; */
-    margin: 0px 45px;
+    margin: 0px 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -637,15 +636,15 @@ body {
 
 .container-img:hover img {
   opacity: 0.18;
-  transition: opacity, background-color 0.7s;
+  transition: opacity, background-color 0.4s;
 }
 .container-img:hover .container-img {
   background-color: #161618;
   border-radius: 50%;
-  transition: background-color 0.7s;
+  transition: background-color 0.4s;
 }
 .container-img:hover .efecto_hover {
-  transition: opacity 0.7s;
+  transition: opacity 0.4s;
   color: #ffff;
   opacity: 1;
 }
