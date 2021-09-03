@@ -123,7 +123,7 @@ body {
   flex-direction: row; /*Cambiar este para ver centrandas las img del portafolio*/
 }
 
-.tittulo__section-sobre_mi {
+.titulo__section {
   text-decoration: underline;
   text-decoration-color: #80cc06;
   text-align: center;
@@ -141,6 +141,7 @@ body {
 .sobre_mi-info {
   /* El espacio que hay entre linea y linea del texto */
   padding: 0px 10px;
+  font-size: 1rem;
 }
 
 .sobre_mi-info-h5 {
@@ -173,9 +174,7 @@ body {
 }
 
 .sobre_mi__container-box {
-  /* width: 50%; */
-  /* background-color: #80cc06; */
-  margin-left: 10px;
+  margin-left: 15px;
 }
 .sobre_mi__container-box-title {
   text-align: center;
@@ -308,9 +307,9 @@ body {
   justify-items: center;
 }
 .portafolio-container-card {
-  margin: 20px 10px;
+  margin: 20px 0px;
   background-color: #232424;
-  width: 35%;
+  width: 30%;
   border-radius: 15px;
 }
 
@@ -391,9 +390,9 @@ body {
   background-color: #1c1c1d;
   padding: 10px;
 }
-.footer h4 {
+.footer__items {
   text-align: center;
-  font-size: 10pt;
+  font-size: 0.75rem;
   color: #80cc06;
 }
 
@@ -417,32 +416,17 @@ body {
     color: white;
     background: none;
     border: none;
-    font-size: 2.05rem;
+    font-size: 1.9rem;
     cursor: pointer;
     display: block;
     margin-top: 3px;
+    margin-right: 12px;
   }
   .logo__nav {
     color: #fbfbfb;
-    font-size: 15pt;
+    font-size: 1 3pt;
     margin: 3px 0;
     font-weight: bold;
-  }
-
-  .logo__nav::before {
-    content: "<";
-    color: #80cc06;
-    font-size: 17pt;
-    font-weight: bold;
-    padding-right: 3px;
-    margin-left: 40px;
-  }
-  .logo__nav::after {
-    content: "/>";
-    color: #80cc06;
-    font-size: 17pt;
-    font-weight: bold;
-    padding-left: 3px;
   }
 
   .nav__header {
@@ -476,7 +460,6 @@ body {
     margin: 15px auto;
     text-align: center;
     flex-direction: column;
-    /* background-color: black; */
   }
   .li__nav {
     font-size: 24pt;
@@ -518,8 +501,9 @@ body {
     text-align: center;
     padding: 15px 10px;
     font-size: 1.3rem;
-    /* margin: 5px 0px; */
   }
+  /* Section Sobre Mi */
+
   .sobre_mi {
     grid-area: sobre_mi;
     /* background-color: #55566b; */
@@ -531,18 +515,24 @@ body {
     align-content: flex-end;
     flex-direction: column; /*Cambiar este para ver centrandas las img del portafolio*/
   }
-  .tittulo__section-sobre_mi {
+  .titulo__section {
     text-decoration: underline;
     text-decoration-color: #80cc06;
     text-align: center;
     margin-bottom: 28px;
-    font-size: 28pt;
+    font-size: 26pt;
+  }
+  .sobre_mi-title {
+    text-decoration: underline;
+    text-decoration-color: #80cc06;
+    margin-top: 30px;
+    text-align: center;
   }
 
   .sobre_mi-info {
-    /* El espacio que hay entre linea y linea del texto */
     width: 100%;
     padding: 5px;
+    font-size: 1rem;
   }
 
   .sobre_mi__contaier span {
@@ -566,12 +556,6 @@ body {
     color: #fff;
     font-size: 20pt;
   }
-  .sobre_mi-title {
-    text-decoration: underline;
-    text-decoration-color: #80cc06;
-    margin-top: 30px;
-    text-align: center;
-  }
 
   .sobre_mi__container-box-title {
     text-align: center;
@@ -587,9 +571,7 @@ body {
     width: 95%;
     padding: 0px 15px;
     margin: auto;
-    /* background-color: red; */
     text-align: justify;
-    font-size: 1rem;
   }
   .sobre_mi__container-img {
     display: flex;
@@ -610,6 +592,10 @@ body {
   }
 
   /*Section Mi portafolio*/
+
+  .portafolio {
+    width: 100%;
+  }
   .portafolio-container-card {
     margin: 20px 10px;
     background-color: #232424;
@@ -618,9 +604,9 @@ body {
     border-radius: 25px;
   }
   .portafolio__container-informacion {
+    padding: 13px 17px;
     text-align: justify;
-    font-size: 0.85rem;
-    padding: 13px 11px;
+    font-size: 1rem;
   }
   .contactame-container {
     display: flex;
@@ -629,11 +615,9 @@ body {
     /* margin: auto; */
   }
   .contactame__caja {
-    width: 90%;
     margin: 15px auto;
     background-color: #1c1c1d;
-    /* border-radius: 15px; */
-    border-radius: 25px;
+    border-radius: 15px;
   }
   .contactame__caja-contacto {
     color: #80cc06;
@@ -646,6 +630,27 @@ body {
     height: 52%;
     margin-top: 35px;
   }
+
+  /* .footer {
+    font-size: 22pt;
+  } */
+  /* Pseudo elemento responsive */
+  .logo__nav::before {
+    content: "<";
+    color: #80cc06;
+    font-size: 14pt;
+    font-weight: bold;
+    padding-right: 3px;
+    margin-left: 40px;
+  }
+  .logo__nav::after {
+    content: "/>";
+    color: #80cc06;
+    font-size: 14pt;
+    font-weight: bold;
+    padding-left: 3px;
+  }
+  /* ---------------------------------- */
 }
 
 /*Pseudo clases*/
