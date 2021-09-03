@@ -1,7 +1,7 @@
 * {
   padding: 0px;
   margin: 0;
-  color: white; /*Provicional*/
+  color: #fff;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   scroll-behavior: smooth;
 }
@@ -13,7 +13,7 @@ body {
 .header {
   background-color: #1c1c1d;
   width: 100%;
-  height: 40px;
+  height: 42px;
   position: fixed;
   grid-area: header;
   overflow: hidden;
@@ -22,18 +22,10 @@ body {
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
-  line-height: 35px;
 
   /*Colocar el z-index para que este mas adelante y no se tape por el efecto hover cuando se pasa el mouse*/
 }
 
-/* .nav__header {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  align-items: center;
-}
- */
 /*Clases del Logo*/
 .logo__nav {
   color: #fbfbfb;
@@ -42,33 +34,17 @@ body {
   text-decoration: none;
 }
 
-.logo__nav::before {
-  content: "<";
-  color: #80cc06;
-  font-size: 20pt;
-  font-weight: bold;
-  padding-right: 3px;
-}
-.logo__nav::after {
-  content: "/>";
-  color: #80cc06;
-  font-size: 20pt;
-  font-weight: bold;
-  padding-left: 3px;
-}
 .ul__nav {
   display: flex;
   list-style: none;
   margin-left: 50px;
 }
 .li__nav {
-  /* background-color: #90d128; */
   font-size: 15pt;
 }
 .a__nav {
   text-decoration-color: #80cc06;
-  /* text-decoration: none; */
-  padding: 15px;
+  padding: 18px;
 }
 
 /*Boton tipo hambuerguesa*/
@@ -77,8 +53,6 @@ body {
   background: none;
   border: none;
   font-size: 2.1875rem;
-  /* padding-right: 2px; */
-  /* line-height: 20px; */
   cursor: pointer;
   display: none;
   margin-right: 40px;
@@ -100,7 +74,7 @@ body {
 /* Section inicio */
 .inicio {
   grid-area: inicio;
-  background-image: url(img/background_opcion4.jpeg);
+  background-image: url(img/background_opcion4.webp);
   /* background-color: green; */
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -178,17 +152,16 @@ body {
 }
 
 .sobre_mi__button-cv {
+  text-align: center;
   color: #ffff;
   background-color: #80cc06;
-  border-style: none;
-  /* border-radius: 10px; */
   width: 240px;
-  /* Cuando sea responsive colocar el boton con un ancho del 100% */
   margin: 30px 10px;
   padding: 5px 0px;
   font-size: 18pt;
 }
-.sobre_mi__button-cv a {
+
+.sobre_mi__button-cv_a {
   text-decoration: none;
   text-decoration-line: none;
 }
@@ -337,33 +310,33 @@ body {
 .portafolio-container-card {
   margin: 20px 10px;
   background-color: #232424;
-  width: 400px;
+  width: 35%;
   border-radius: 15px;
 }
-.portafolio-container-card p {
-  text-align: justify;
-}
+
 .titulo-card__portafolio {
   /* background-color: chocolate; */
-  color: white;
-  padding-top: 8px;
+  color: #fff;
+  padding-top: 10px;
   padding-bottom: 15px;
   text-align: center;
+  font-size: 1.2rem;
 }
 .portafolio__container-img {
   text-align: center;
   align-self: center;
   justify-content: center;
-  width: 90%;
+  width: 95%;
 }
 .portafolio__container-informacion {
-  padding: 15px 20px;
+  text-align: justify;
+  font-size: 1.07rem;
+  padding: 10px 15px;
 }
 
 .portafolio-container-card:hover .portafolio__container-img {
   transition: border-bottom 0.2s;
   border-bottom: 1px solid #80cc06;
-  opacity: 0.2;
 }
 .portafolio-container-card:hover .titulo-card__portafolio {
   transition: text-decoration 0.2s;
@@ -519,17 +492,11 @@ body {
   }
 
   .inicio {
-    grid-area: inicio;
-    background-image: url(img/background_opcion4.jpeg);
-    /* background-color: green; */
-    background-repeat: no-repeat;
-    background-size: 100% 95%;
-    background-attachment: fixed;
-    height: 111vh;
+    height: 88vh;
     width: 100%;
   }
   .inicio__div {
-    width: 90%;
+    width: 100%;
     margin: auto;
     margin-top: 120px;
     display: flex;
@@ -543,15 +510,15 @@ body {
   .foto {
     border-radius: 50%;
     border: 2px solid #80cc06;
-    width: 230px;
-    height: 248px;
-    /* margin: 15px 0px; */
+    width: 220px;
+    height: 245px;
+    margin: 0px 0px;
   }
   .nombre-profesion {
     text-align: center;
-    padding: 12px 0px;
-    font-size: 18pt;
-    margin: 10px 0px;
+    padding: 15px 10px;
+    font-size: 1.3rem;
+    /* margin: 5px 0px; */
   }
   .sobre_mi {
     grid-area: sobre_mi;
@@ -568,7 +535,7 @@ body {
     text-decoration: underline;
     text-decoration-color: #80cc06;
     text-align: center;
-    margin-bottom: 28 px;
+    margin-bottom: 28px;
     font-size: 28pt;
   }
 
@@ -585,18 +552,18 @@ body {
   }
 
   .sobre_mi__button-cv {
-    /* margin: 0px 14px; */
+    text-align: center;
     width: 100%;
     /* Cuando sea responsive colocar el boton con un ancho del 100% */
     margin-top: 20px;
     margin-bottom: 50px;
     padding: 5px 0px;
   }
-  .sobre_mi__button-cv a {
+  .sobre_mi__button-cv_a {
     text-align: center;
     text-decoration: none;
     text-decoration-line: none;
-    color: #000;
+    color: #fff;
     font-size: 20pt;
   }
   .sobre_mi-title {
@@ -611,15 +578,7 @@ body {
     padding: 15px 0px;
     text-decoration: underline #80cc06;
   }
-  .sobre_mi__container-img {
-    margin: 0px 0px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    padding: 0px 20px;
-  }
+
   .sobre_mi-info-h5 {
     padding-left: 8px;
   }
@@ -632,6 +591,78 @@ body {
     text-align: justify;
     font-size: 1rem;
   }
+  .sobre_mi__container-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .container-img {
+    background-color: #2c2d2e;
+    border-radius: 25px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 10px 8px;
+    position: relative;
+  }
+
+  /*Section Mi portafolio*/
+  .portafolio-container-card {
+    margin: 20px 10px;
+    background-color: #232424;
+    width: 100%;
+    /* border-radius: 15px; */
+    border-radius: 25px;
+  }
+  .portafolio__container-informacion {
+    text-align: justify;
+    font-size: 0.85rem;
+    padding: 13px 11px;
+  }
+  .contactame-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    /* margin: auto; */
+  }
+  .contactame__caja {
+    width: 90%;
+    margin: 15px auto;
+    background-color: #1c1c1d;
+    /* border-radius: 15px; */
+    border-radius: 25px;
+  }
+  .contactame__caja-contacto {
+    color: #80cc06;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .contactame__caja-img {
+    width: 39%;
+    height: 52%;
+    margin-top: 35px;
+  }
+}
+
+/*Pseudo clases*/
+/*-------------------*/
+.logo__nav::before {
+  content: "<";
+  color: #80cc06;
+  font-size: 20pt;
+  font-weight: bold;
+  padding-right: 3px;
+}
+.logo__nav::after {
+  content: "/>";
+  color: #80cc06;
+  font-size: 20pt;
+  font-weight: bold;
+  padding-left: 3px;
 }
 
 .container-img:hover img {

@@ -1,4 +1,3 @@
-console.log("Hola mundogi");
 const nav__toggle = document.querySelector(".nav__toggle");
 const nav__header = document.querySelector(".nav__header");
 const nav__header_visible = document.querySelector(".nav__header_visible");
