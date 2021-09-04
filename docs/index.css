@@ -1,17 +1,24 @@
 * {
   padding: 0px;
   margin: 0;
-  color: #fff;
+  color: var(--color_letra_principal);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   scroll-behavior: smooth;
 }
-body {
-  background-color: #070606;
+
+:root {
+  --color_letra_principal: #fff;
+  --color_letra_secundario: #9df017;
+  --color_fondo: #000;
+  --color_fondo_cartas: #232424;
+}
+.body {
+  background-color: var(--color_fondo);
 }
 
 /* Clases del header */
 .header {
-  background-color: #1c1c1d;
+  background-color: var(--color_fondo_cartas);
   width: 100%;
   height: 42px;
   position: fixed;
@@ -28,7 +35,7 @@ body {
 
 /*Clases del Logo*/
 .logo__nav {
-  color: #fbfbfb;
+  color: var(--color_letra_principal);
   font-size: 18pt;
   font-weight: bold;
   text-decoration: none;
@@ -43,13 +50,13 @@ body {
   font-size: 15pt;
 }
 .a__nav {
-  text-decoration-color: #80cc06;
+  text-decoration-color: var(--color_letra_secundario);
   padding: 18px;
 }
 
 /*Boton tipo hambuerguesa*/
 .nav__toggle {
-  color: white;
+  color: var(--color_letra_principal);
   background: none;
   border: none;
   font-size: 2.1875rem;
@@ -97,7 +104,7 @@ body {
 
 .foto {
   border-radius: 50%;
-  border: 2px solid #80cc06;
+  border: 2px solid var(--color_letra_secundario);
   width: 245px;
   height: 270px;
   margin: 15px 60px;
@@ -109,13 +116,12 @@ body {
 }
 
 .profesion {
-  color: #9df017;
+  color: var(--color_letra_secundario);
 }
 /* ------------------------------ */
 /* Section Sobre mi */
 .sobre_mi {
   grid-area: sobre_mi;
-  /* background-color: #55566b; */
   width: 90%;
   margin: auto;
   margin-top: 30px;
@@ -125,7 +131,7 @@ body {
 
 .titulo__section {
   text-decoration: underline;
-  text-decoration-color: #80cc06;
+  text-decoration-color: var(--color_letra_secundario);
   text-align: center;
   margin-top: 53px;
   margin-bottom: 5px;
@@ -148,14 +154,13 @@ body {
   padding-left: 10px;
 }
 .ejemploContenedor-texto span {
-  color: #80cc06;
+  color: var(--color_letra_secundario);
   margin-left: 4px;
 }
 
 .sobre_mi__button-cv {
   text-align: center;
-  color: #ffff;
-  background-color: #80cc06;
+  background-color: var(--color_letra_secundario);
   width: 240px;
   margin: 30px 10px;
   padding: 5px 0px;
@@ -165,11 +170,12 @@ body {
 .sobre_mi__button-cv_a {
   text-decoration: none;
   text-decoration-line: none;
+  color: var(--color_fondo);
 }
 
 .sobre_mi-title {
   text-align: center;
-  text-decoration: underline #80cc06;
+  text-decoration: underline var(--color_letra_secundario);
   padding-bottom: 10px;
 }
 
@@ -179,7 +185,7 @@ body {
 .sobre_mi__container-box-title {
   text-align: center;
   padding-bottom: 8px;
-  text-decoration: underline #80cc06;
+  text-decoration: underline var(--color_letra_secundario);
 }
 .sobre_mi__container-img {
   display: flex;
@@ -187,9 +193,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  /* text-align: right; */
-  /* background-color: red; */
-  /* padding: 0px 50px; */
 }
 
 .container-img {
@@ -219,8 +222,6 @@ body {
   transform: translate(-50%, -50%);
 }
 .javascript {
-  /* top: 47px;
-  left: 20px; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -232,51 +233,37 @@ body {
   transform: translate(-50%, -50%);
 }
 .git {
-  /* top: 47px;
-  left: 49px; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .github {
-  /* top: 47px;
-  left: 32px; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .java {
-  /* top: 47px;
-  left: 44px; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .bootstrap {
-  /* top: 47px;
-  left: 20px; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .c_sharp {
-  /* top: 47px;
-  left: 50px; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .sql_server {
-  /* top: 47px;
-  left: 22px; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .firebase {
-  /* top: 47px;
-  left: 26px; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -308,13 +295,12 @@ body {
 }
 .portafolio-container-card {
   margin: 20px 0px;
-  background-color: #232424;
+  background-color: var(--color_fondo_cartas);
   width: 30%;
   border-radius: 15px;
 }
 
 .titulo-card__portafolio {
-  /* background-color: chocolate; */
   color: #fff;
   padding-top: 10px;
   padding-bottom: 15px;
@@ -335,23 +321,22 @@ body {
 
 .portafolio-container-card:hover .portafolio__container-img {
   transition: border-bottom 0.2s;
-  border-bottom: 1px solid #80cc06;
+  border-bottom: 1px solid var(--color_letra_secundario);
 }
 .portafolio-container-card:hover .titulo-card__portafolio {
   transition: text-decoration 0.2s;
-  text-decoration: 2px underline #80cc06;
+  text-decoration: 2px underline var(--color_letra_secundario);
 }
 
 .contactame {
   grid-area: contactame;
-  /* background-color: aqua; */
   width: 90%;
   margin: auto;
   text-align: center;
 }
 .contactame-container-titulo {
   text-decoration: underline;
-  text-decoration-color: #80cc06;
+  text-decoration-color: var(--color_letra_secundario);
   text-align: center;
   margin: 20px 0;
   font-size: 22pt;
@@ -360,17 +345,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  /* margin: auto; */
 }
 .contactame__caja {
   width: 300px;
   height: 200px;
   margin: 45px auto;
-  background-color: #1c1c1d;
+  background-color: var(--color_fondo_cartas);
   border-radius: 18px;
 }
 .contactame__caja-contacto {
-  color: #80cc06;
+  color: var(--color_letra_secundario);
   text-align: center;
   padding: 12px;
 }
@@ -381,24 +365,25 @@ body {
   margin-top: 35px;
 }
 .contactame__caja:hover {
-  background-color: #2a2a2f;
+  background-color: var(--color_fondo_cartas);
   opacity: 0.7;
   transition: opacity 0.2s;
 }
 .footer {
   grid-area: footer;
-  background-color: #1c1c1d;
+  background-color: var(--color_fondo_cartas);
   padding: 10px;
 }
 .footer__items {
   text-align: center;
   font-size: 0.75rem;
-  color: #80cc06;
+  color: var(--color_letra_secundario);
 }
 
+/* Diseño responsive(movil,tablet) */
 @media (max-width: 880px) {
   .header {
-    background-color: #1c1c1d;
+    background-color: var(--color_fondo_cartas);
     width: 100%;
     height: 43px;
     position: fixed;
@@ -413,7 +398,7 @@ body {
     /*Colocar el z-index para que este mas adelante y no se tape por el efecto hover cuando se pasa el mouse*/
   }
   .nav__toggle {
-    color: white;
+    color: var(--color_letra_principal);
     background: none;
     border: none;
     font-size: 1.9rem;
@@ -423,7 +408,7 @@ body {
     margin-right: 12px;
   }
   .logo__nav {
-    color: #fbfbfb;
+    color: var(--color_letra_principal);
     font-size: 1 3pt;
     margin: 3px 0;
     font-weight: bold;
@@ -433,7 +418,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #232424;
+    background-color: var(--color_fondo_cartas);
     position: fixed;
     top: 40px;
     width: 100%;
@@ -446,7 +431,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #232424;
+    background-color: var(--color_fondo_cartas);
     position: fixed;
     top: 40px;
     width: 100%;
@@ -492,7 +477,7 @@ body {
 
   .foto {
     border-radius: 50%;
-    border: 2px solid #80cc06;
+    border: 2px solid var(--color_letra_secundario);
     width: 220px;
     height: 245px;
     margin: 0px 0px;
@@ -502,11 +487,10 @@ body {
     padding: 15px 10px;
     font-size: 1.3rem;
   }
-  /* Section Sobre Mi */
 
+  /* Section Sobre Mi */
   .sobre_mi {
     grid-area: sobre_mi;
-    /* background-color: #55566b; */
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -517,14 +501,14 @@ body {
   }
   .titulo__section {
     text-decoration: underline;
-    text-decoration-color: #80cc06;
+    text-decoration-color: var(--color_letra_secundario);
     text-align: center;
     margin-bottom: 28px;
     font-size: 26pt;
   }
   .sobre_mi-title {
     text-decoration: underline;
-    text-decoration-color: #80cc06;
+    text-decoration-color: var(--color_letra_secundario);
     margin-top: 30px;
     text-align: center;
   }
@@ -536,7 +520,7 @@ body {
   }
 
   .sobre_mi__contaier span {
-    color: #80cc06;
+    color: var(--color_letra_secundario);
     margin-left: 3px;
     line-height: 200%;
   }
@@ -553,14 +537,14 @@ body {
     text-align: center;
     text-decoration: none;
     text-decoration-line: none;
-    color: #fff;
-    font-size: 20pt;
+    color: var(--color_fondo);
+    font-size: 18pt;
   }
 
   .sobre_mi__container-box-title {
     text-align: center;
     padding: 15px 0px;
-    text-decoration: underline #80cc06;
+    text-decoration: underline var(--color_letra_secundario);
   }
 
   .sobre_mi-info-h5 {
@@ -582,7 +566,7 @@ body {
   }
 
   .container-img {
-    background-color: #2c2d2e;
+    background-color: var(--color_fondo_cartas);
     border-radius: 25px;
     justify-content: center;
     justify-items: center;
@@ -592,15 +576,13 @@ body {
   }
 
   /*Section Mi portafolio*/
-
   .portafolio {
     width: 100%;
   }
   .portafolio-container-card {
     margin: 20px 10px;
-    background-color: #232424;
+    background-color: var(--color_fondo_cartas);
     width: 100%;
-    /* border-radius: 15px; */
     border-radius: 25px;
   }
   .portafolio__container-informacion {
@@ -616,7 +598,7 @@ body {
   }
   .contactame__caja {
     margin: 15px auto;
-    background-color: #1c1c1d;
+    background-color: var(--color_fondo_cartas);
     border-radius: 15px;
   }
   .contactame__caja-contacto {
@@ -631,13 +613,10 @@ body {
     margin-top: 35px;
   }
 
-  /* .footer {
-    font-size: 22pt;
-  } */
   /* Pseudo elemento responsive */
   .logo__nav::before {
     content: "<";
-    color: #80cc06;
+    color: var(--color_letra_secundario);
     font-size: 14pt;
     font-weight: bold;
     padding-right: 3px;
@@ -645,7 +624,7 @@ body {
   }
   .logo__nav::after {
     content: "/>";
-    color: #80cc06;
+    color: var(--color_letra_secundario);
     font-size: 14pt;
     font-weight: bold;
     padding-left: 3px;
@@ -653,18 +632,18 @@ body {
   /* ---------------------------------- */
 }
 
-/*Pseudo clases*/
 /*-------------------*/
+/*Pseudo clases*/
 .logo__nav::before {
   content: "<";
-  color: #80cc06;
+  color: var(--color_letra_secundario);
   font-size: 20pt;
   font-weight: bold;
   padding-right: 3px;
 }
 .logo__nav::after {
   content: "/>";
-  color: #80cc06;
+  color: var(--color_letra_secundario);
   font-size: 20pt;
   font-weight: bold;
   padding-left: 3px;
@@ -681,6 +660,6 @@ body {
 }
 .container-img:hover .efecto_hover {
   transition: opacity 0.4s;
-  color: #ffff;
+  color: var(--color_letra_principal);
   opacity: 1;
 }
