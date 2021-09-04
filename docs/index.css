@@ -10,7 +10,7 @@
   --color_letra_principal: #fff;
   --color_letra_secundario: #9df017;
   --color_fondo: #000;
-  --color_fondo_cartas: #232424;
+  --color_fondo_cartas: #242424;
 }
 .body {
   background-color: var(--color_fondo);
@@ -81,11 +81,10 @@
 /* Section inicio */
 .inicio {
   grid-area: inicio;
-  background-image: url(img/background_opcion4.webp);
-  /* background-color: green; */
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   background-attachment: fixed;
+  background-image: url(img/background_opcion4.webp);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
 }
@@ -196,7 +195,7 @@
 }
 
 .container-img {
-  background-color: #2c2d2e;
+  background-color: var(--color_fondo_cartas);
   border-radius: 25px;
   justify-content: center;
   justify-items: center;
