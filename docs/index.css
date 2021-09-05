@@ -629,6 +629,12 @@
     padding-left: 3px;
   }
   /* ---------------------------------- */
+
+  .footer__items {
+    text-align: center;
+    font-size: 0.6rem;
+    color: var(--color_letra_secundario);
+  }
 }
 
 /*-------------------*/

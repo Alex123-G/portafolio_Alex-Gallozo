@@ -8,16 +8,14 @@ nav__toggle.addEventListener("click", () => {
   nav__header.classList.toggle("nav__header_visible");
 });
 
-for (let index = 0; index < a__nav_length; index++) {
-  a__nav[index].addEventListener("click", () => {
+a__nav.forEach((item) => {
+  item.addEventListener("click", () => {
     nav__header.classList.toggle("nav__header_visible");
   });
-}
+});
 
-// a__nav[1].addEventListener("click", () => {
-//   nav__header.classList.toggle("nav__header_visible");
-// });
-
-// a__nav[2].addEventListener("click", () => {
-//   nav__header.classList.toggle("nav__header_visible");
-// });
+// for (let index = 0; index < a__nav_length; index++) {
+//   a__nav[index].addEventListener("click", () => {
+//     nav__header.classList.toggle("nav__header_visible");
+//   });
+// }
