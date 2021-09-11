@@ -8,17 +8,18 @@
 
 :root {
 	--color_letra_principal: #fff;
-	--color_letra_secundario: #627df5;
+	--color_letra_secundario: #5271f8;
 	--color_fondo: #000000;
-	--color_fondo_cartas: #2f3652;
-} 
+	--color_header_footer: #2a314d;
+	--color_fondo_cartas: #1d243d;
+}
 .body {
 	background-color: var(--color_fondo);
 }
 
 /* Clases del header */
 .header {
-	background-color: var(--color_fondo_cartas);
+	background-color: var(--color_header_footer);
 	width: 100%;
 	height: 42px;
 	position: fixed;
@@ -82,7 +83,7 @@
 .inicio {
 	grid-area: inicio;
 	background-attachment: fixed;
-	background-image: url(img/background_opcion4.webp);
+	background-image: url(img/background_opcion4\(claro\).jpg);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	height: 100vh;
@@ -293,9 +294,9 @@
 	justify-items: center;
 }
 .portafolio-container-card {
-	margin: 20px 0px;
+	margin: 20px 5px;
 	background-color: var(--color_fondo_cartas);
-	width: 30%;
+	width: 45%;
 	border-radius: 15px;
 }
 
@@ -311,10 +312,11 @@
 	align-self: center;
 	justify-content: center;
 	width: 95%;
+	object-fit: scale-down;
 }
 .portafolio__container-informacion {
 	text-align: justify;
-	font-size: 1.07rem;
+	font-size: 1rem;
 	padding: 10px 15px;
 }
 
@@ -337,23 +339,22 @@
 	text-decoration: underline;
 	text-decoration-color: var(--color_letra_secundario);
 	text-align: center;
-	margin: 20px 0;
 	font-size: 22pt;
 }
 .contactame-container {
 	display: flex;
 	flex-wrap: wrap;
-	text-align: center;
+	justify-content: center;
 }
 .contactame__caja {
 	width: 300px;
 	height: 200px;
-	margin: 45px auto;
+	margin: 20px 25px;
 	background-color: var(--color_fondo_cartas);
 	border-radius: 18px;
 }
 .contactame__caja-contacto {
-	color: var(--color_letra_secundario);
+	color: var(--color_letra_principal);
 	text-align: center;
 	padding: 12px;
 }
@@ -370,13 +371,13 @@
 }
 .footer {
 	grid-area: footer;
-	background-color: var(--color_fondo_cartas);
+	background-color: var(--color_header_footer);
 	padding: 10px;
 }
 .footer__items {
 	text-align: center;
 	font-size: 0.75rem;
-	color: var(--color_letra_secundario);
+	color: var(--color_letra_principal);
 }
 
 /* Diseño responsive(movil,tablet) */
