@@ -1,670 +1,670 @@
 * {
-  padding: 0px;
-  margin: 0;
-  color: var(--color_letra_principal);
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  scroll-behavior: smooth;
+	padding: 0px;
+	margin: 0;
+	color: var(--color_letra_principal);
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	scroll-behavior: smooth;
 }
 
 :root {
-  --color_letra_principal: #fff;
-  --color_letra_secundario: #9df017;
-  --color_fondo: #000;
-  --color_fondo_cartas: #242424;
-}
+	--color_letra_principal: #fff;
+	--color_letra_secundario: #627df5;
+	--color_fondo: #000000;
+	--color_fondo_cartas: #2f3652;
+} 
 .body {
-  background-color: var(--color_fondo);
+	background-color: var(--color_fondo);
 }
 
 /* Clases del header */
 .header {
-  background-color: var(--color_fondo_cartas);
-  width: 100%;
-  height: 42px;
-  position: fixed;
-  grid-area: header;
-  overflow: hidden;
-  z-index: 100;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  align-items: center;
+	background-color: var(--color_fondo_cartas);
+	width: 100%;
+	height: 42px;
+	position: fixed;
+	grid-area: header;
+	overflow: hidden;
+	z-index: 100;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	align-items: center;
 
-  /*Colocar el z-index para que este mas adelante y no se tape por el efecto hover cuando se pasa el mouse*/
+	/*Colocar el z-index para que este mas adelante y no se tape por el efecto hover cuando se pasa el mouse*/
 }
 
 /*Clases del Logo*/
 .logo__nav {
-  color: var(--color_letra_principal);
-  font-size: 18pt;
-  font-weight: bold;
-  text-decoration: none;
+	color: var(--color_letra_principal);
+	font-size: 18pt;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 .ul__nav {
-  display: flex;
-  list-style: none;
-  margin-left: 50px;
+	display: flex;
+	list-style: none;
+	margin-left: 50px;
 }
 .li__nav {
-  font-size: 15pt;
+	font-size: 15pt;
 }
 .a__nav {
-  text-decoration-color: var(--color_letra_secundario);
-  padding: 18px;
+	text-decoration-color: var(--color_letra_secundario);
+	padding: 18px;
 }
 
 /*Boton tipo hambuerguesa*/
 .nav__toggle {
-  color: var(--color_letra_principal);
-  background: none;
-  border: none;
-  font-size: 2.1875rem;
-  cursor: pointer;
-  display: none;
-  margin-right: 40px;
+	color: var(--color_letra_principal);
+	background: none;
+	border: none;
+	font-size: 2.1875rem;
+	cursor: pointer;
+	display: none;
+	margin-right: 40px;
 }
 /* Conteneodr main */
 .container {
-  width: 100%;
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-areas:
-    "inicio"
-    "sobre_mi"
-    "portafolio"
-    "contactame"
-    "footer ";
+	width: 100%;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-areas:
+		"inicio"
+		"sobre_mi"
+		"portafolio"
+		"contactame"
+		"footer ";
 }
 /* ------------------------------ */
 /* Section inicio */
 .inicio {
-  grid-area: inicio;
-  background-attachment: fixed;
-  background-image: url(img/background_opcion4.webp);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100%;
+	grid-area: inicio;
+	background-attachment: fixed;
+	background-image: url(img/background_opcion4.webp);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
 }
 
 .inicio__div {
-  width: 100%;
-  margin: auto;
-  margin-top: 210px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+	width: 100%;
+	margin: auto;
+	margin-top: 210px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .foto {
-  border-radius: 50%;
-  border: 2px solid var(--color_letra_secundario);
-  width: 245px;
-  height: 270px;
-  margin: 15px 60px;
+	border-radius: 50%;
+	border: 2px solid var(--color_letra_secundario);
+	width: 245px;
+	height: 270px;
+	margin: 15px 60px;
 }
 .nombre-profesion {
-  text-align: center;
-  padding-top: 15px;
-  font-size: 25pt;
+	text-align: center;
+	padding-top: 15px;
+	font-size: 25pt;
 }
 
 .profesion {
-  color: var(--color_letra_secundario);
+	color: var(--color_letra_secundario);
 }
 /* ------------------------------ */
 /* Section Sobre mi */
 .sobre_mi {
-  grid-area: sobre_mi;
-  width: 90%;
-  margin: auto;
-  margin-top: 30px;
-  display: flex;
-  flex-direction: row; /*Cambiar este para ver centrandas las img del portafolio*/
+	grid-area: sobre_mi;
+	width: 90%;
+	margin: auto;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row; /*Cambiar este para ver centrandas las img del portafolio*/
 }
 
 .titulo__section {
-  text-decoration: underline;
-  text-decoration-color: var(--color_letra_secundario);
-  text-align: center;
-  margin-top: 53px;
-  margin-bottom: 5px;
-  font-size: 22pt;
+	text-decoration: underline;
+	text-decoration-color: var(--color_letra_secundario);
+	text-align: center;
+	margin-top: 53px;
+	margin-bottom: 5px;
+	font-size: 22pt;
 }
 
 .ejemploContenedor-texto {
-  width: 110%;
-  text-align: justify;
-  font-size: 12pt;
-  line-height: 175%;
+	width: 110%;
+	text-align: justify;
+	font-size: 12pt;
+	line-height: 175%;
 }
 .sobre_mi-info {
-  /* El espacio que hay entre linea y linea del texto */
-  padding: 0px 10px;
-  font-size: 1rem;
+	/* El espacio que hay entre linea y linea del texto */
+	padding: 0px 10px;
+	font-size: 1rem;
 }
 
 .sobre_mi-info-h5 {
-  padding-left: 10px;
+	padding-left: 10px;
 }
 .ejemploContenedor-texto span {
-  color: var(--color_letra_secundario);
-  margin-left: 4px;
+	color: var(--color_letra_secundario);
+	margin-left: 4px;
 }
 
 .sobre_mi__button-cv {
-  text-align: center;
-  background-color: var(--color_letra_secundario);
-  width: 240px;
-  margin: 30px 10px;
-  padding: 5px 0px;
-  font-size: 18pt;
+	text-align: center;
+	background-color: var(--color_letra_secundario);
+	width: 240px;
+	margin: 30px 10px;
+	padding: 5px 0px;
+	font-size: 18pt;
 }
 
 .sobre_mi__button-cv_a {
-  text-decoration: none;
-  text-decoration-line: none;
-  color: var(--color_fondo);
+	text-decoration: none;
+	text-decoration-line: none;
+	color: var(--color_fondo);
 }
 
 .sobre_mi-title {
-  text-align: center;
-  text-decoration: underline var(--color_letra_secundario);
-  padding-bottom: 10px;
+	text-align: center;
+	text-decoration: underline var(--color_letra_secundario);
+	padding-bottom: 10px;
 }
 
 .sobre_mi__container-box {
-  margin-left: 15px;
+	margin-left: 15px;
 }
 .sobre_mi__container-box-title {
-  text-align: center;
-  padding-bottom: 8px;
-  text-decoration: underline var(--color_letra_secundario);
+	text-align: center;
+	padding-bottom: 8px;
+	text-decoration: underline var(--color_letra_secundario);
 }
 .sobre_mi__container-img {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
 }
 
 .container-img {
-  background-color: var(--color_fondo_cartas);
-  border-radius: 25px;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  margin: 10px 20px;
-  position: relative;
+	background-color: var(--color_fondo_cartas);
+	border-radius: 25px;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+	margin: 10px 20px;
+	position: relative;
 }
 .efecto_hover {
-  position: absolute;
-  opacity: 0;
-  font-size: 14pt;
-  text-align: center;
+	position: absolute;
+	opacity: 0;
+	font-size: 14pt;
+	text-align: center;
 }
 
 .html {
-  top: 47px;
-  left: 39px;
+	top: 47px;
+	left: 39px;
 }
 
 .css {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .javascript {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .mysql {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .git {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .github {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .java {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .bootstrap {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .c_sharp {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .sql_server {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .firebase {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .container-img img {
-  width: 90px;
-  height: 95px;
-  padding: 15px;
+	width: 90px;
+	height: 95px;
+	padding: 15px;
 }
 
 /*------------------------------------------- */
 /* Mi Portafolio */
 .portafolio {
-  grid-area: portafolio;
-  width: 90%;
-  margin: auto;
+	grid-area: portafolio;
+	width: 90%;
+	margin: auto;
 }
 .portafolio__container {
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  text-align: center;
-  align-items: center;
-  align-content: center;
-  justify-self: center;
-  justify-items: center;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	text-align: center;
+	align-items: center;
+	align-content: center;
+	justify-self: center;
+	justify-items: center;
 }
 .portafolio-container-card {
-  margin: 20px 0px;
-  background-color: var(--color_fondo_cartas);
-  width: 30%;
-  border-radius: 15px;
+	margin: 20px 0px;
+	background-color: var(--color_fondo_cartas);
+	width: 30%;
+	border-radius: 15px;
 }
 
 .titulo-card__portafolio {
-  color: #fff;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  text-align: center;
-  font-size: 1.2rem;
+	color: #fff;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	text-align: center;
+	font-size: 1.2rem;
 }
 .portafolio__container-img {
-  text-align: center;
-  align-self: center;
-  justify-content: center;
-  width: 95%;
+	text-align: center;
+	align-self: center;
+	justify-content: center;
+	width: 95%;
 }
 .portafolio__container-informacion {
-  text-align: justify;
-  font-size: 1.07rem;
-  padding: 10px 15px;
+	text-align: justify;
+	font-size: 1.07rem;
+	padding: 10px 15px;
 }
 
 .portafolio-container-card:hover .portafolio__container-img {
-  transition: border-bottom 0.2s;
-  border-bottom: 1px solid var(--color_letra_secundario);
+	transition: border-bottom 0.2s;
+	border-bottom: 1px solid var(--color_letra_secundario);
 }
 .portafolio-container-card:hover .titulo-card__portafolio {
-  transition: text-decoration 0.2s;
-  text-decoration: 2px underline var(--color_letra_secundario);
+	transition: text-decoration 0.2s;
+	text-decoration: 2px underline var(--color_letra_secundario);
 }
 
 .contactame {
-  grid-area: contactame;
-  width: 90%;
-  margin: auto;
-  text-align: center;
+	grid-area: contactame;
+	width: 90%;
+	margin: auto;
+	text-align: center;
 }
 .contactame-container-titulo {
-  text-decoration: underline;
-  text-decoration-color: var(--color_letra_secundario);
-  text-align: center;
-  margin: 20px 0;
-  font-size: 22pt;
+	text-decoration: underline;
+	text-decoration-color: var(--color_letra_secundario);
+	text-align: center;
+	margin: 20px 0;
+	font-size: 22pt;
 }
 .contactame-container {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
 }
 .contactame__caja {
-  width: 300px;
-  height: 200px;
-  margin: 45px auto;
-  background-color: var(--color_fondo_cartas);
-  border-radius: 18px;
+	width: 300px;
+	height: 200px;
+	margin: 45px auto;
+	background-color: var(--color_fondo_cartas);
+	border-radius: 18px;
 }
 .contactame__caja-contacto {
-  color: var(--color_letra_secundario);
-  text-align: center;
-  padding: 12px;
+	color: var(--color_letra_secundario);
+	text-align: center;
+	padding: 12px;
 }
 
 .contactame__caja-img {
-  width: 39%;
-  height: 52%;
-  margin-top: 35px;
+	width: 39%;
+	height: 52%;
+	margin-top: 35px;
 }
 .contactame__caja:hover {
-  background-color: var(--color_fondo_cartas);
-  opacity: 0.7;
-  transition: opacity 0.2s;
+	background-color: var(--color_fondo_cartas);
+	opacity: 0.7;
+	transition: opacity 0.2s;
 }
 .footer {
-  grid-area: footer;
-  background-color: var(--color_fondo_cartas);
-  padding: 10px;
+	grid-area: footer;
+	background-color: var(--color_fondo_cartas);
+	padding: 10px;
 }
 .footer__items {
-  text-align: center;
-  font-size: 0.75rem;
-  color: var(--color_letra_secundario);
+	text-align: center;
+	font-size: 0.75rem;
+	color: var(--color_letra_secundario);
 }
 
 /* Diseño responsive(movil,tablet) */
 @media (max-width: 880px) {
-  .header {
-    background-color: var(--color_fondo_cartas);
-    width: 100%;
-    height: 43px;
-    position: fixed;
-    grid-area: header;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    z-index: 100;
+	.header {
+		background-color: var(--color_fondo_cartas);
+		width: 100%;
+		height: 43px;
+		position: fixed;
+		grid-area: header;
+		overflow: hidden;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		align-items: center;
+		z-index: 100;
 
-    /*Colocar el z-index para que este mas adelante y no se tape por el efecto hover cuando se pasa el mouse*/
-  }
-  .nav__toggle {
-    color: var(--color_letra_principal);
-    background: none;
-    border: none;
-    font-size: 1.9rem;
-    cursor: pointer;
-    display: block;
-    margin-top: 3px;
-    margin-right: 12px;
-  }
-  .logo__nav {
-    color: var(--color_letra_principal);
-    font-size: 1 3pt;
-    margin: 3px 0;
-    font-weight: bold;
-  }
+		/*Colocar el z-index para que este mas adelante y no se tape por el efecto hover cuando se pasa el mouse*/
+	}
+	.nav__toggle {
+		color: var(--color_letra_principal);
+		background: none;
+		border: none;
+		font-size: 1.9rem;
+		cursor: pointer;
+		display: block;
+		margin-top: 3px;
+		margin-right: 12px;
+	}
+	.logo__nav {
+		color: var(--color_letra_principal);
+		font-size: 1 3pt;
+		margin: 3px 0;
+		font-weight: bold;
+	}
 
-  .nav__header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--color_fondo_cartas);
-    position: fixed;
-    top: 40px;
-    width: 100%;
-    height: 100%;
-    left: 100%;
-    transition: left 1s;
-  }
+	.nav__header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: var(--color_fondo_cartas);
+		position: fixed;
+		top: 40px;
+		width: 100%;
+		height: 100%;
+		left: 100%;
+		transition: left 1s;
+	}
 
-  .nav__header_visible {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--color_fondo_cartas);
-    position: fixed;
-    top: 40px;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    transition: left 1s;
-  }
+	.nav__header_visible {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: var(--color_fondo_cartas);
+		position: fixed;
+		top: 40px;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		transition: left 1s;
+	}
 
-  .ul__nav {
-    display: flex;
-    margin: 15px auto;
-    text-align: center;
-    flex-direction: column;
-  }
-  .li__nav {
-    font-size: 24pt;
-    text-align: center;
-    padding: 30px 0;
-    text-decoration: none;
-  }
+	.ul__nav {
+		display: flex;
+		margin: 15px auto;
+		text-align: center;
+		flex-direction: column;
+	}
+	.li__nav {
+		font-size: 24pt;
+		text-align: center;
+		padding: 30px 0;
+		text-decoration: none;
+	}
 
-  .li__nav:hover .a__nav {
-    transition: all 0.4s;
-    background: none;
-    opacity: 0.4;
-  }
+	.li__nav:hover .a__nav {
+		transition: all 0.4s;
+		background: none;
+		opacity: 0.4;
+	}
 
-  .inicio {
-    height: 88vh;
-    width: 100%;
-  }
-  .inicio__div {
-    width: 100%;
-    margin: auto;
-    margin-top: 120px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+	.inicio {
+		height: 88vh;
+		width: 100%;
+	}
+	.inicio__div {
+		width: 100%;
+		margin: auto;
+		margin-top: 120px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
 
-  .foto {
-    border-radius: 50%;
-    border: 2px solid var(--color_letra_secundario);
-    width: 220px;
-    height: 245px;
-    margin: 0px 0px;
-  }
-  .nombre-profesion {
-    text-align: center;
-    padding: 15px 10px;
-    font-size: 1.3rem;
-  }
+	.foto {
+		border-radius: 50%;
+		border: 2px solid var(--color_letra_secundario);
+		width: 220px;
+		height: 245px;
+		margin: 0px 0px;
+	}
+	.nombre-profesion {
+		text-align: center;
+		padding: 15px 10px;
+		font-size: 1.3rem;
+	}
 
-  /* Section Sobre Mi */
-  .sobre_mi {
-    grid-area: sobre_mi;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-    align-content: flex-end;
-    flex-direction: column; /*Cambiar este para ver centrandas las img del portafolio*/
-  }
-  .titulo__section {
-    text-decoration: underline;
-    text-decoration-color: var(--color_letra_secundario);
-    text-align: center;
-    margin-bottom: 28px;
-    font-size: 26pt;
-  }
-  .sobre_mi-title {
-    text-decoration: underline;
-    text-decoration-color: var(--color_letra_secundario);
-    margin-top: 30px;
-    text-align: center;
-  }
+	/* Section Sobre Mi */
+	.sobre_mi {
+		grid-area: sobre_mi;
+		margin: auto;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
+		align-items: center;
+		align-content: flex-end;
+		flex-direction: column; /*Cambiar este para ver centrandas las img del portafolio*/
+	}
+	.titulo__section {
+		text-decoration: underline;
+		text-decoration-color: var(--color_letra_secundario);
+		text-align: center;
+		margin-bottom: 28px;
+		font-size: 26pt;
+	}
+	.sobre_mi-title {
+		text-decoration: underline;
+		text-decoration-color: var(--color_letra_secundario);
+		margin-top: 30px;
+		text-align: center;
+	}
 
-  .sobre_mi-info {
-    width: 100%;
-    padding: 5px;
-    font-size: 1rem;
-  }
+	.sobre_mi-info {
+		width: 100%;
+		padding: 5px;
+		font-size: 1rem;
+	}
 
-  .sobre_mi__contaier span {
-    color: var(--color_letra_secundario);
-    margin-left: 3px;
-    line-height: 200%;
-  }
+	.sobre_mi__contaier span {
+		color: var(--color_letra_secundario);
+		margin-left: 3px;
+		line-height: 200%;
+	}
 
-  .sobre_mi__button-cv {
-    text-align: center;
-    width: 100%;
-    /* Cuando sea responsive colocar el boton con un ancho del 100% */
-    margin-top: 20px;
-    margin-bottom: 50px;
-    padding: 5px 0px;
-  }
-  .sobre_mi__button-cv_a {
-    text-align: center;
-    text-decoration: none;
-    text-decoration-line: none;
-    color: var(--color_fondo);
-    font-size: 18pt;
-  }
+	.sobre_mi__button-cv {
+		text-align: center;
+		width: 100%;
+		/* Cuando sea responsive colocar el boton con un ancho del 100% */
+		margin-top: 20px;
+		margin-bottom: 50px;
+		padding: 5px 0px;
+	}
+	.sobre_mi__button-cv_a {
+		text-align: center;
+		text-decoration: none;
+		text-decoration-line: none;
+		color: var(--color_fondo);
+		font-size: 18pt;
+	}
 
-  .sobre_mi__container-box-title {
-    text-align: center;
-    padding: 15px 0px;
-    text-decoration: underline var(--color_letra_secundario);
-  }
+	.sobre_mi__container-box-title {
+		text-align: center;
+		padding: 15px 0px;
+		text-decoration: underline var(--color_letra_secundario);
+	}
 
-  .sobre_mi-info-h5 {
-    padding-left: 8px;
-  }
+	.sobre_mi-info-h5 {
+		padding-left: 8px;
+	}
 
-  .ejemploContenedor-texto {
-    width: 95%;
-    padding: 0px 15px;
-    margin: auto;
-    text-align: justify;
-  }
-  .sobre_mi__container-img {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-  }
+	.ejemploContenedor-texto {
+		width: 95%;
+		padding: 0px 15px;
+		margin: auto;
+		text-align: justify;
+	}
+	.sobre_mi__container-img {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+	}
 
-  .container-img {
-    background-color: var(--color_fondo_cartas);
-    border-radius: 25px;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    margin: 10px 8px;
-    position: relative;
-  }
+	.container-img {
+		background-color: var(--color_fondo_cartas);
+		border-radius: 25px;
+		justify-content: center;
+		justify-items: center;
+		align-items: center;
+		margin: 10px 8px;
+		position: relative;
+	}
 
-  /*Section Mi portafolio*/
-  .portafolio {
-    width: 100%;
-  }
-  .portafolio-container-card {
-    margin: 20px 10px;
-    background-color: var(--color_fondo_cartas);
-    width: 100%;
-    border-radius: 25px;
-  }
-  .portafolio__container-informacion {
-    padding: 13px 17px;
-    text-align: justify;
-    font-size: 1rem;
-  }
-  .contactame-container {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    /* margin: auto; */
-  }
-  .contactame__caja {
-    margin: 15px auto;
-    background-color: var(--color_fondo_cartas);
-    border-radius: 15px;
-  }
-  .contactame__caja-contacto {
-    color: #80cc06;
-    text-align: center;
-    padding: 12px;
-  }
+	/*Section Mi portafolio*/
+	.portafolio {
+		width: 100%;
+	}
+	.portafolio-container-card {
+		margin: 20px 10px;
+		background-color: var(--color_fondo_cartas);
+		width: 100%;
+		border-radius: 25px;
+	}
+	.portafolio__container-informacion {
+		padding: 13px 17px;
+		text-align: justify;
+		font-size: 1rem;
+	}
+	.contactame-container {
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+		/* margin: auto; */
+	}
+	.contactame__caja {
+		margin: 15px auto;
+		background-color: var(--color_fondo_cartas);
+		border-radius: 15px;
+	}
+	.contactame__caja-contacto {
+		color: #80cc06;
+		text-align: center;
+		padding: 12px;
+	}
 
-  .contactame__caja-img {
-    width: 39%;
-    height: 52%;
-    margin-top: 35px;
-  }
+	.contactame__caja-img {
+		width: 39%;
+		height: 52%;
+		margin-top: 35px;
+	}
 
-  /* Pseudo elemento responsive */
-  .logo__nav::before {
-    content: "<";
-    color: var(--color_letra_secundario);
-    font-size: 14pt;
-    font-weight: bold;
-    padding-right: 3px;
-    margin-left: 40px;
-  }
-  .logo__nav::after {
-    content: "/>";
-    color: var(--color_letra_secundario);
-    font-size: 14pt;
-    font-weight: bold;
-    padding-left: 3px;
-  }
-  /* ---------------------------------- */
+	/* Pseudo elemento responsive */
+	.logo__nav::before {
+		content: "<";
+		color: var(--color_letra_secundario);
+		font-size: 14pt;
+		font-weight: bold;
+		padding-right: 3px;
+		margin-left: 40px;
+	}
+	.logo__nav::after {
+		content: "/>";
+		color: var(--color_letra_secundario);
+		font-size: 14pt;
+		font-weight: bold;
+		padding-left: 3px;
+	}
+	/* ---------------------------------- */
 
-  .footer__items {
-    text-align: center;
-    font-size: 0.6rem;
-    color: var(--color_letra_secundario);
-  }
+	.footer__items {
+		text-align: center;
+		font-size: 0.6rem;
+		color: var(--color_letra_secundario);
+	}
 }
 
 /*-------------------*/
 /*Pseudo clases*/
 .logo__nav::before {
-  content: "<";
-  color: var(--color_letra_secundario);
-  font-size: 20pt;
-  font-weight: bold;
-  padding-right: 3px;
+	content: "<";
+	color: var(--color_letra_secundario);
+	font-size: 20pt;
+	font-weight: bold;
+	padding-right: 3px;
 }
 .logo__nav::after {
-  content: "/>";
-  color: var(--color_letra_secundario);
-  font-size: 20pt;
-  font-weight: bold;
-  padding-left: 3px;
+	content: "/>";
+	color: var(--color_letra_secundario);
+	font-size: 20pt;
+	font-weight: bold;
+	padding-left: 3px;
 }
 
 .container-img:hover img {
-  opacity: 0.18;
-  transition: opacity, background-color 0.4s;
+	opacity: 0.18;
+	transition: opacity, background-color 0.4s;
 }
 .container-img:hover .container-img {
-  background-color: #161618;
-  border-radius: 50%;
-  transition: background-color 0.4s;
+	background-color: #161618;
+	border-radius: 50%;
+	transition: background-color 0.4s;
 }
 .container-img:hover .efecto_hover {
-  transition: opacity 0.4s;
-  color: var(--color_letra_principal);
-  opacity: 1;
+	transition: opacity 0.4s;
+	color: var(--color_letra_principal);
+	opacity: 1;
 }
