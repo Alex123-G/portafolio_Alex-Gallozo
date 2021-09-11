@@ -82,18 +82,18 @@
 /* Section inicio */
 .inicio {
 	grid-area: inicio;
-	background-attachment: fixed;
-	background-image: url(img/background_opcion4\(claro\).jpg);
+	/* background-attachment: fixed; */
+	background-image: url(img/background_opcion4.webp);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	height: 100vh;
+	height: 96vh;
 	width: 100%;
 }
 
 .inicio__div {
 	width: 100%;
 	margin: auto;
-	margin-top: 210px;
+	margin-top: 200px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -104,10 +104,10 @@
 
 .foto {
 	border-radius: 50%;
-	border: 2px solid var(--color_letra_secundario);
+	border: 1px solid var(--color_letra_secundario);
 	width: 245px;
 	height: 270px;
-	margin: 15px 60px;
+	margin: 15px 70px;
 }
 .nombre-profesion {
 	text-align: center;
@@ -117,6 +117,7 @@
 
 .profesion {
 	color: var(--color_letra_secundario);
+	font-weight: bolder;
 }
 /* ------------------------------ */
 /* Section Sobre mi */
@@ -297,7 +298,7 @@
 	margin: 20px 5px;
 	background-color: var(--color_fondo_cartas);
 	width: 45%;
-	border-radius: 15px;
+	border-radius: 5px;
 }
 
 .titulo-card__portafolio {
@@ -343,13 +344,14 @@
 }
 .contactame-container {
 	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 .contactame__caja {
-	width: 300px;
-	height: 200px;
-	margin: 20px 25px;
+	width: 270px;
+	height: 210px;
+	margin: 20px 20px;
 	background-color: var(--color_fondo_cartas);
 	border-radius: 18px;
 }
@@ -635,6 +637,33 @@
 		text-align: center;
 		font-size: 0.6rem;
 		color: var(--color_letra_secundario);
+	}
+}
+
+@media screen and (max-width: 1250px) {
+	/* Mi Portafolio */
+	.portafolio {
+		grid-area: portafolio;
+		width: 90%;
+		margin: auto;
+	}
+	.portafolio__container {
+		margin: auto;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		text-align: center;
+		align-items: center;
+		align-content: center;
+		justify-self: center;
+		justify-items: center;
+	}
+	.portafolio-container-card {
+		margin: 20px 5px;
+		background-color: var(--color_fondo_cartas);
+		width: 80%;
+		border-radius: 5px;
 	}
 }
 
