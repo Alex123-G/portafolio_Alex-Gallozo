@@ -199,7 +199,7 @@
 }
 
 .container-img {
-	background-color: var(--color_fondo_cartas);
+	background-color: var(--color_header_footer);
 	border-radius: 25px;
 	justify-content: center;
 	justify-items: center;
@@ -354,11 +354,11 @@
 	width: 270px;
 	height: 210px;
 	margin: 20px 20px;
-	background-color: var(--color_fondo_cartas);
+	background-color: var(--color_header_footer);
 	border-radius: 18px;
 }
 .contactame__caja-contacto {
-	color: var(--color_letra_principal);
+	color: var(--color_letra_secundario);
 	text-align: center;
 	padding: 12px;
 }
@@ -368,11 +368,7 @@
 	height: 52%;
 	margin-top: 35px;
 }
-.contactame__caja:hover {
-	background-color: var(--color_fondo_cartas);
-	opacity: 0.7;
-	transition: opacity 0.2s;
-}
+
 .footer {
 	grid-area: footer;
 	background-color: var(--color_header_footer);
@@ -686,17 +682,24 @@
 	padding-left: 3px;
 }
 
-.container-img:hover img {
-	opacity: 0.18;
-	transition: opacity, background-color 0.4s;
-}
-.container-img:hover .container-img {
-	background-color: #161618;
-	border-radius: 50%;
+.container-img:hover {
+	background-color: var(--color_fondo_cartas);
 	transition: background-color 0.4s;
 }
+/* Opacidad de la imagen */
+.container-img:hover img {
+	opacity: 0.18;
+	transition: opacity 0.4s;
+}
+/* Efecto que cambia el color de la letra en los lenguajes */
 .container-img:hover .efecto_hover {
 	transition: opacity 0.4s;
 	color: var(--color_letra_principal);
 	opacity: 1;
+}
+/* Efecto encima cuando se paso por un contacto */
+.contactame__caja:hover {
+	background-color: var(--color_fondo_cartas);
+	opacity: 0.7;
+	transition: opacity 0.2s;
 }
