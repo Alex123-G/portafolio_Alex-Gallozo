@@ -8,10 +8,12 @@
 
 :root {
 	--color_letra_principal: #fff;
-	--color_letra_secundario: #5271f8;
+	--color_letra_secundario: #5271ff;
 	--color_fondo: #000000;
-	--color_header_footer: black;
-	--color_fondo_cartas: #262e52;
+	--color_header_footer: #262e52;
+	--color_fondo_cartas: #272729;
+	/* --color_fondo_cartas: #262e52; */
+	/* #eaaaa0 */
 }
 .body {
 	background-color: var(--color_fondo);
@@ -296,7 +298,7 @@
 }
 .portafolio-container-card {
 	margin: 20px 5px;
-	background-color: var(--color_fondo_cartas);
+	background-color: var(--color_header_footer);
 	width: 45%;
 	border-radius: 5px;
 }
