@@ -362,7 +362,7 @@
 	border-radius: 18px;
 }
 .contactame__caja-contacto {
-	color: var(--color_letra_secundario);
+	color: var(--color_letra_principal);
 	text-align: center;
 	padding: 12px;
 }
@@ -630,11 +630,11 @@
 		background-color: var(--color_header_footer);
 		border-radius: 15px;
 	}
-	.contactame__caja-contacto {
+	/* .contactame__caja-contacto {
 		color: var(--color_letra_secundario);
 		text-align: center;
 		padding: 12px;
-	}
+	} */
 
 	.contactame__caja-img {
 		width: 39%;
