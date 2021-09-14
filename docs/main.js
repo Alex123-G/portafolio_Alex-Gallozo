@@ -19,8 +19,7 @@ a__nav.forEach(item => {
 	});
 });
 
-// for (let index = 0; index < a__nav_length; index++) {
-//   a__nav[index].addEventListener("click", () => {
-//     nav__header.classList.toggle("nav__header_visible");
-//   });
-// }
+ScrollReveal({ distance: "70px" });
+ScrollReveal().reveal(".inicio__div", { duration: 1190 });
+ScrollReveal().reveal(".efecto_scroll", { duration: 1190 });
+ScrollReveal().reveal("#contactame", { duration: 1190 });

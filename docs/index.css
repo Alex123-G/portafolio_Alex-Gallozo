@@ -19,6 +19,9 @@
 	background-color: var(--color_fondo);
 }
 
+.efecto_scroll {
+	margin: 85px 0;
+}
 /* Clases del header */
 .header {
 	background-color: var(--color_header_footer);
@@ -53,7 +56,7 @@
 	font-size: 15pt;
 }
 .a__nav {
-	text-decoration-color: var(--color_letra_secundario);
+	/* text-decoration: none; */
 	padding: 18px;
 }
 
@@ -536,10 +539,6 @@
 		flex-direction: column; /*Cambiar este para ver centrandas las img del portafolio*/
 	}
 	.titulo__section {
-		text-decoration: underline;
-		text-decoration-color: var(--color_letra_secundario);
-		text-align: center;
-		margin-bottom: 28px;
 		font-size: 26pt;
 	}
 	.sobre_mi-title {
