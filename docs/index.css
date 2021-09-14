@@ -35,7 +35,6 @@
 	justify-content: space-around;
 	flex-direction: row;
 	align-items: center;
-
 	/*Colocar el z-index para que este mas adelante y no se tape por el efecto hover cuando se pasa el mouse*/
 }
 
@@ -56,8 +55,9 @@
 	font-size: 15pt;
 }
 .a__nav {
-	/* text-decoration: none; */
 	padding: 18px;
+	text-decoration-color: var(--color_letra_secundario);
+	text-decoration-thickness: 3px;
 }
 
 /*Boton tipo hambuerguesa*/
@@ -616,15 +616,18 @@
 		width: 100%;
 	}
 	.portafolio-container-card {
-		margin: 20px 10px;
+		margin: 25px 0px;
 		background-color: var(--color_header_footer);
 		width: 100%;
-		border-radius: 25px;
+		/* border-radius: 25px; */
 	}
 	.portafolio__container-informacion {
-		padding: 13px 17px;
+		padding: 5px 3px;
 		text-align: justify;
 		font-size: 1rem;
+	}
+	.portafolio__container-img {
+		width: 100%;
 	}
 	.contactame-container {
 		display: flex;

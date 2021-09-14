@@ -19,7 +19,7 @@ a__nav.forEach(item => {
 	});
 });
 
-ScrollReveal({ distance: "70px" });
-ScrollReveal().reveal(".inicio__div", { duration: 1190 });
-ScrollReveal().reveal(".efecto_scroll", { duration: 1190 });
-ScrollReveal().reveal("#contactame", { duration: 1190 });
+ScrollReveal({ distance: "90px" });
+ScrollReveal().reveal(".inicio__div", { origin: "top" }, { duration: 1400 });
+ScrollReveal().reveal(".efecto_scroll", { origin: "top" }, { duration: 1400 });
+ScrollReveal().reveal("#contactame", { origin: "bottom" }, { duration: 1400 });
