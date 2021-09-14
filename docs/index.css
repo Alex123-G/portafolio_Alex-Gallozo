@@ -130,17 +130,24 @@
 	margin-top: 30px;
 	display: flex;
 	flex-direction: row; /*Cambiar este para ver centrandas las img del portafolio*/
+	margin-bottom: 90px;
 }
 
 .titulo__section {
-	text-decoration: underline;
-	text-decoration-color: var(--color_letra_secundario);
+	color: var(--color_letra_principal);
 	text-align: center;
-	margin-top: 53px;
-	margin-bottom: 5px;
-	font-size: 22pt;
+	margin-top: 70px;
+	font-size: 23pt;
 }
-
+.linea_separadora {
+	background-color: var(--color_letra_secundario);
+	text-align: center;
+	height: 3px;
+	width: 70%;
+	margin: auto;
+	margin-top: 15px;
+	margin-bottom: 60px;
+}
 .ejemploContenedor-texto {
 	width: 110%;
 	text-align: justify;
