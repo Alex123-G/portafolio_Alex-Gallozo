@@ -139,7 +139,7 @@
 .titulo__section {
 	color: var(--color_letra_principal);
 	text-align: center;
-	margin-top: 70px;
+	margin-top: 90px;
 	font-size: 23pt;
 }
 .linea_separadora {
@@ -149,7 +149,7 @@
 	width: 70%;
 	margin: auto;
 	margin-top: 15px;
-	margin-bottom: 60px;
+	margin-bottom: 35px;
 }
 .ejemploContenedor-texto {
 	width: 110%;
