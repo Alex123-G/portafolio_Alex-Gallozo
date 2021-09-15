@@ -19,8 +19,8 @@ a__nav.forEach(item => {
 	});
 });
 
-ScrollReveal({ distance: "80px" });
-ScrollReveal().reveal(".inicio__div", { duration: 1400 }, { origin: "top" });
-ScrollReveal().reveal(".scroll_sobremo", { duration: 1400 }, { origin: "bottom" });
-ScrollReveal().reveal(".scrollportafolio", { duration: 1400 }, { origin: "top" });
-ScrollReveal().reveal("#contactame", { duration: 1400 }, { origin: "bottom" });
+ScrollReveal({ distance: "90px" });
+ScrollReveal().reveal(".inicio__div", { duration: 1500 }, { origin: "top" });
+ScrollReveal().reveal(".scroll_sobremo", { duration: 1500 }, { origin: "bottom" });
+ScrollReveal().reveal(".scrollportafolio", { duration: 1500 }, { origin: "top" });
+ScrollReveal().reveal("#contactame", { duration: 1500 }, { origin: "bottom" });
