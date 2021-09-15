@@ -448,7 +448,7 @@
 	}
 	.logo__nav {
 		color: var(--color_letra_principal);
-		font-size: 1rem;
+		font-size: 1.1rem;
 		margin: 3px 0;
 		font-weight: bold;
 	}
@@ -486,9 +486,9 @@
 		flex-direction: column;
 	}
 	.li__nav {
-		font-size: 24pt;
+		font-size: 28pt;
 		text-align: center;
-		padding: 30px 0;
+		padding: 35px 0;
 		text-decoration: none;
 	}
 
@@ -499,7 +499,7 @@
 	}
 
 	.inicio {
-		height: 88vh;
+		height: 86vh;
 		width: 100%;
 	}
 	.inicio__div {
@@ -516,17 +516,27 @@
 
 	.foto {
 		border-radius: 50%;
-		border: 2px solid var(--color_letra_secundario);
-		width: 220px;
-		height: 245px;
-		margin: 0px 0px;
+		border: 0px solid var(--color_letra_secundario);
+		width: 180px;
+		height: 195px;
 	}
 	.nombre-profesion {
 		text-align: center;
-		padding: 15px 10px;
-		font-size: 1.3rem;
+		padding: 0px 20px;
 	}
 
+	.nombre {
+		font-size: 1.7rem;
+		padding: 3px 0;
+		font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+			"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+		font-weight: bold;
+	}
+	.profesion {
+		font-size: 1.8rem;
+		font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+			"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	}
 	/* Section Sobre Mi */
 	.sobre_mi {
 		grid-area: sobre_mi;
@@ -623,7 +633,7 @@
 	.portafolio__container-informacion {
 		padding: 5px 10px;
 		text-align: justify;
-		font-size: 0.8rem;
+		font-size: 0.7rem;
 	}
 	.portafolio__container-img {
 		width: 100%;
@@ -637,12 +647,18 @@
 		margin: 15px auto;
 		background-color: var(--color_header_footer);
 		border-radius: 15px;
+		font-size: 0.7rem;
 	}
 
 	.contactame__caja-img {
 		width: 39%;
 		height: 52%;
 		margin-top: 35px;
+	}
+	.footer__items {
+		text-align: center;
+		font-size: 0.6rem;
+		color: var(--color_letra_principal);
 	}
 
 	/* Pseudo elemento responsive */
@@ -662,12 +678,6 @@
 		padding-left: 3px;
 	}
 	/* ---------------------------------- */
-
-	.footer__items {
-		text-align: center;
-		font-size: 0.7rem;
-		color: var(--color_letra_principal);
-	}
 }
 
 /*-------------------*/
