@@ -19,7 +19,8 @@ a__nav.forEach(item => {
 	});
 });
 
-ScrollReveal({ distance: "90px" });
-ScrollReveal().reveal(".inicio__div", { origin: "top" }, { duration: 1400 });
-ScrollReveal().reveal(".efecto_scroll", { origin: "top" }, { duration: 1400 });
-ScrollReveal().reveal("#contactame", { origin: "bottom" }, { duration: 1400 });
+ScrollReveal({ distance: "80px" });
+ScrollReveal().reveal(".inicio__div", { duration: 1400 }, { origin: "top" });
+ScrollReveal().reveal(".scroll_sobremo", { duration: 1400 }, { origin: "bottom" });
+ScrollReveal().reveal(".scrollportafolio", { duration: 1400 }, { origin: "top" });
+ScrollReveal().reveal("#contactame", { duration: 1400 }, { origin: "bottom" });

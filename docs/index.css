@@ -613,18 +613,17 @@
 
 	/*Section Mi portafolio*/
 	.portafolio {
-		width: 100%;
+		width: 94%;
 	}
 	.portafolio-container-card {
 		margin: 25px 0px;
 		background-color: var(--color_header_footer);
 		width: 100%;
-		/* border-radius: 25px; */
 	}
 	.portafolio__container-informacion {
-		padding: 5px 3px;
+		padding: 5px 10px;
 		text-align: justify;
-		font-size: 1rem;
+		font-size: 0.8rem;
 	}
 	.portafolio__container-img {
 		width: 100%;
@@ -639,11 +638,6 @@
 		background-color: var(--color_header_footer);
 		border-radius: 15px;
 	}
-	/* .contactame__caja-contacto {
-		color: var(--color_letra_secundario);
-		text-align: center;
-		padding: 12px;
-	} */
 
 	.contactame__caja-img {
 		width: 39%;
