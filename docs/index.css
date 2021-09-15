@@ -448,7 +448,7 @@
 	}
 	.logo__nav {
 		color: var(--color_letra_principal);
-		font-size: 1.1rem;
+		font-size: 1rem;
 		margin: 3px 0;
 		font-weight: bold;
 	}
@@ -665,7 +665,7 @@
 	.logo__nav::before {
 		content: "<";
 		color: var(--color_letra_secundario);
-		font-size: 14pt;
+		font-size: 0.85rem;
 		font-weight: bold;
 		padding-right: 3px;
 		margin-left: 40px;
@@ -673,7 +673,7 @@
 	.logo__nav::after {
 		content: "/>";
 		color: var(--color_letra_secundario);
-		font-size: 14pt;
+		font-size: 0.85rem;
 		font-weight: bold;
 		padding-left: 3px;
 	}
