@@ -139,7 +139,7 @@
 .titulo__section {
 	color: var(--color_letra_principal);
 	text-align: center;
-	margin-top: 90px;
+	margin-top: 0px;
 	font-size: 23pt;
 }
 .linea_separadora {
@@ -548,8 +548,18 @@
 		align-content: flex-end;
 		flex-direction: column; /*Cambiar este para ver centrandas las img del portafolio*/
 	}
-	.titulo__section {
+	/* .titulo__section {
 		font-size: 26pt;
+	} */
+
+	.linea_separadora {
+		background-color: var(--color_letra_secundario);
+		text-align: center;
+		height: 3px;
+		width: 70%;
+		margin: auto;
+		margin-top: 15px;
+		margin-bottom: 25px;
 	}
 	.sobre_mi-title {
 		text-decoration: underline;
