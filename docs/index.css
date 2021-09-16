@@ -383,6 +383,10 @@
 	margin-top: 35px;
 }
 
+.link_contactame {
+	text-decoration: none;
+}
+
 .footer {
 	grid-area: footer;
 	background-color: var(--color_header_footer);
@@ -393,6 +397,7 @@
 	font-size: 0.75rem;
 	color: var(--color_letra_principal);
 }
+
 @media screen and (max-width: 1250px) {
 	/* Mi Portafolio */
 	.portafolio {
@@ -420,7 +425,7 @@
 }
 
 /* Diseño responsive(movil,tablet) */
-@media (max-width: 880px) {
+@media screen and (max-width: 700px) {
 	.header {
 		background-color: var(--color_header_footer);
 		width: 100%;
