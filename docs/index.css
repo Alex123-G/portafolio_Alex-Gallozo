@@ -728,8 +728,8 @@
 	opacity: 1;
 }
 /* Efecto encima cuando se paso por un contacto */
-.contactame__caja:hover {
+/* .contactame__caja:hover {
 	background-color: var(--color_fondo_cartas);
 	opacity: 0.7;
 	transition: opacity 0.2s;
-}
+} */
