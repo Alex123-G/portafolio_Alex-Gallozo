@@ -2,7 +2,7 @@ const nav__toggle = document.querySelector(".nav__toggle");
 const nav__header = document.querySelector(".nav__header");
 const nav__header_visible = document.querySelector(".nav__header_visible");
 const a__nav = document.querySelectorAll(".a__nav");
-const a__nav_length = document.querySelectorAll(".a__nav").length;
+// const a__nav_length = document.querySelectorAll(".a__nav").length;
 const logo__nav = document.querySelector(`.logo__nav`);
 
 nav__toggle.addEventListener("click", () => {

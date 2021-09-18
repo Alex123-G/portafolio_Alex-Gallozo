@@ -166,7 +166,7 @@
 .sobre_mi-info-h5 {
 	padding-left: 10px;
 }
-.ejemploContenedor-texto span {
+.span_sobre_mi {
 	color: var(--color_letra_secundario);
 	margin-left: 4px;
 }
@@ -333,19 +333,6 @@
 	padding: 10px 15px;
 }
 
-.portafolio-container-card:hover {
-	background-color: var(--color_fondo_cartas);
-	transition: background-color 0.4s;
-}
-.portafolio-container-card:hover .portafolio__container-img {
-	border-bottom: 1px solid var(--color_letra_secundario);
-	transition: border-bottom 0.4s;
-}
-.portafolio-container-card:hover .titulo-card__portafolio {
-	transition: text-decoration 0.4s;
-	text-decoration: 2px underline var(--color_letra_secundario);
-}
-
 .contactame {
 	grid-area: contactame;
 	width: 90%;
@@ -495,12 +482,6 @@
 		text-align: center;
 		padding: 35px 0;
 		text-decoration: none;
-	}
-
-	.li__nav:hover .a__nav {
-		transition: all 0.4s;
-		background: none;
-		opacity: 0.4;
 	}
 
 	.inicio {
@@ -677,6 +658,7 @@
 	}
 
 	/* Pseudo elemento responsive */
+
 	.logo__nav::before {
 		content: "<";
 		color: var(--color_letra_secundario);
@@ -691,6 +673,11 @@
 		font-size: 0.85rem;
 		font-weight: bold;
 		padding-left: 3px;
+	}
+	.li__nav:hover .a__nav {
+		transition: all 0.4s;
+		background: none;
+		opacity: 0.4;
 	}
 	/* ---------------------------------- */
 }
@@ -716,20 +703,28 @@
 	background-color: var(--color_fondo_cartas);
 	transition: background-color 0.4s;
 }
+.portafolio-container-card:hover {
+	background-color: var(--color_fondo_cartas);
+	transition: background-color 0.4s;
+}
 /* Opacidad de la imagen de los lenguajes */
 .container-img:hover img {
 	opacity: 0.18;
 	transition: opacity 0.4s;
 }
+
+.portafolio-container-card:hover .portafolio__container-img {
+	border-bottom: 1px solid var(--color_letra_secundario);
+	transition: border-bottom 0.4s;
+}
+.portafolio-container-card:hover .titulo-card__portafolio {
+	transition: text-decoration 0.4s;
+	text-decoration: 2px underline var(--color_letra_secundario);
+}
+
 /* Efecto que cambia el color de la letra en los lenguajes */
 .container-img:hover .efecto_hover {
 	transition: opacity 0.4s;
 	color: var(--color_letra_principal);
 	opacity: 1;
 }
-/* Efecto encima cuando se paso por un contacto */
-/* .contactame__caja:hover {
-	background-color: var(--color_fondo_cartas);
-	opacity: 0.7;
-	transition: opacity 0.2s;
-} */
