@@ -308,6 +308,9 @@
 	justify-self: center;
 	justify-items: center;
 }
+.links_portafolio {
+	text-decoration: none;
+}
 .portafolio-container-card {
 	margin: 20px 5px;
 	background-color: var(--color_header_footer);
