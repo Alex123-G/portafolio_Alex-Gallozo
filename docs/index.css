@@ -321,6 +321,7 @@
 	padding-bottom: 15px;
 	text-align: center;
 	font-size: 1.2rem;
+	text-decoration: underline 3px var(--color_letra_secundario);
 }
 .portafolio__container-img {
 	text-align: center;
@@ -707,23 +708,11 @@
 	background-color: var(--color_fondo_cartas);
 	transition: background-color 0.4s;
 }
-.portafolio-container-card:hover {
-	background-color: var(--color_fondo_cartas);
-	transition: background-color 0.4s;
-}
+
 /* Opacidad de la imagen de los lenguajes */
 .container-img:hover img {
 	opacity: 0.18;
 	transition: opacity 0.4s;
-}
-
-.portafolio-container-card:hover .portafolio__container-img {
-	border-bottom: 1px solid var(--color_letra_secundario);
-	transition: border-bottom 0.4s;
-}
-.portafolio-container-card:hover .titulo-card__portafolio {
-	transition: text-decoration 0.4s;
-	text-decoration: 2px underline var(--color_letra_secundario);
 }
 
 /* Efecto que cambia el color de la letra en los lenguajes */
