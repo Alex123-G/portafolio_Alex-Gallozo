@@ -8,7 +8,7 @@
 
 :root {
 	--color_letra_principal: #fff;
-	--color_letra_secundario: #5271ff;
+	--color_letra_secundario: #4271ff;
 	--color_fondo: #000000;
 	--color_header_footer: #262e52;
 	--color_fondo_cartas: #272729;
@@ -87,11 +87,12 @@
 /* Section inicio */
 .inicio {
 	grid-area: inicio;
-	/* background-attachment: fixed; */
-	background-image: url(img/background_opcion4.webp);
+	background-attachment: fixed;
+	background-image: url(img/caractula_desenfoque5.jpg);
 	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	height: 96vh;
+	/* background-repeat: no-repeat; */
+	background-position: 50%;
+	height: 95vh;
 	width: 100%;
 }
 
@@ -117,12 +118,13 @@
 .nombre-profesion {
 	text-align: center;
 	padding-top: 15px;
-	font-size: 25pt;
+	font-size: 28pt;
 }
 
 .profesion {
 	color: var(--color_letra_secundario);
-	font-weight: bolder;
+	/* font-weight: bold; */
+	/* font-size: 30pt; */
 }
 /* ------------------------------ */
 /* Section Sobre mi */
@@ -133,7 +135,7 @@
 	margin-top: 30px;
 	display: flex;
 	flex-direction: row; /*Cambiar este para ver centrandas las img del portafolio*/
-	margin-bottom: 90px;
+	margin-bottom: 120px;
 }
 
 .titulo__section {
@@ -485,7 +487,7 @@
 	}
 
 	.inicio {
-		height: 86vh;
+		height: 100vh;
 		width: 100%;
 	}
 	.inicio__div {
