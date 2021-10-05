@@ -701,7 +701,7 @@
 	.header {
 		background-color: var(--color_header_footer);
 		width: 100%;
-		height: 38px;
+		height: 40px;
 		position: fixed;
 		grid-area: header;
 		overflow: hidden;
