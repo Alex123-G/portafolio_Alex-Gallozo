@@ -2,7 +2,7 @@
 	padding: 0px;
 	margin: 0;
 	color: var(--color_letra_principal);
-	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	font-family: "Montserrat", sans-serif;
 	scroll-behavior: smooth;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .efecto_scroll {
-	margin: 85px 0;
+	margin: 80px 0;
 }
 /* Clases del header */
 .header {
@@ -185,7 +185,7 @@
 .sobre_mi__button-cv_a {
 	text-decoration: none;
 	text-decoration-line: none;
-	color: var(--color_fondo);
+	color: var(--color_letra_principal);
 }
 
 .sobre_mi-title {
@@ -987,19 +987,19 @@
 }
 
 .container-img:hover {
-	background-color: var(--color_fondo_cartas);
+	background-color: rgb(38, 46, 82, 0.8);
 	transition: background-color 0.4s;
 }
 
 /* Opacidad de la imagen de los lenguajes */
 .container-img:hover img {
-	opacity: 0.18;
+	opacity: 0.1;
 	transition: opacity 0.4s;
 }
 
 /* Efecto que cambia el color de la letra en los lenguajes */
 .container-img:hover .efecto_hover {
-	transition: opacity 0.4s;
-	color: var(--color_letra_principal);
 	opacity: 1;
+	color: white;
+	transition: opacity 0.4s;
 }
