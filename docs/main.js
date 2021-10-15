@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Efecto Scrooll
-ScrollReveal({ distance: "100px" });
+ScrollReveal({ distance: "70px" });
 ScrollReveal().reveal(".inicio__div", { duration: 1500 }, { origin: "top" });
 ScrollReveal().reveal(".scroll_sobremo", { duration: 1500 }, { origin: "bottom" });
 ScrollReveal().reveal(".scrollportafolio", { duration: 1500 }, { origin: "top" });

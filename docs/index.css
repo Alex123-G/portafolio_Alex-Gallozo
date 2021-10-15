@@ -22,7 +22,7 @@
 /* Css Para el Modal */
 .modal_visible {
 	position: absolute;
-	transform: scale(0) translate(200px);
+	transform: scale(0) translate(100px);
 	transition: all 0.4s ease-in;
 }
 
@@ -222,7 +222,6 @@
 
 .profesion {
 	color: var(--color_letra_secundario);
-
 }
 /* ------------------------------ */
 /* Section Sobre mi */
@@ -787,6 +786,17 @@
 
 @media all and (max-width: 700px) {
 	/*Estilos para el Modal */
+	.ventana__modal {
+		position: sticky;
+		top: 30%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 15em;
+		height: 11em;
+		min-width: 250px;
+		border: 2px solid var(--color_fondo_cartas);
+	}
 	.modal__button {
 		font-size: 0.69em;
 		padding: 0;
@@ -794,14 +804,14 @@
 		height: 3.4em;
 	}
 	.btn_exit {
-		left: 43%;
+		left: 44%;
 		right: 0;
-		bottom: 17%;
+		bottom: 13%;
 	}
 	.btn_exit_unit {
 		left: 44%;
 		right: 0;
-		bottom: 29%;
+		bottom: 27%;
 	}
 	/* ------------- */
 	.inicio {
@@ -1025,6 +1035,30 @@
 		font-size: 0.7rem;
 		color: var(--color_letra_principal);
 	}
+
+	/* Pseudo elemento responsive */
+
+	.logo__nav::before {
+		content: "<";
+		color: var(--color_letra_secundario);
+		font-size: 0.85rem;
+		font-weight: bold;
+		padding-right: 3px;
+		margin-left: 40px;
+	}
+	.logo__nav::after {
+		content: "/>";
+		color: var(--color_letra_secundario);
+		font-size: 0.85rem;
+		font-weight: bold;
+		padding-left: 3px;
+	}
+	.li__nav:hover .a__nav {
+		transition: all 0.4s;
+		background: none;
+		opacity: 0.4;
+	}
+	/* ---------------------------------- */
 }
 
 /*-------------------*/
