@@ -1,3 +1,6 @@
+/* Corregir cuando este ehcada la pantalla el ancho y el largo */
+/* En modelo movil la transicion es muy lenta */
+/* Cambiar las imagenes a otro formato wsep */
 * {
 	padding: 0px;
 	margin: 0px;
@@ -522,18 +525,27 @@
 }
 /* media query para dispositivos moviles largo */
 @media screen and (max-height: 600px) {
+	.ventana__modal {
+		top: 20%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 20em;
+		height: 11.5em;
+		min-width: 270px;
+	}
 	.modal__button {
 		margin: 0.625em;
-		font-size: 1.2em;
+		font-size: 1.1em;
 	}
 	.btn_exit {
 		left: 45%;
 		right: 0;
-		bottom: 5%;
+		bottom: 2%;
 	}
 	.btn_exit_unit {
 		left: 44%;
-		bottom: 23%;
+		bottom: 20%;
 	}
 	.header {
 		background-color: var(--color_header_footer);
