@@ -141,13 +141,14 @@
 .ul__nav {
 	display: flex;
 	list-style: none;
-	margin-left: 3.25em;
+	margin-left: 3.1em;
+	margin-right: -30px;
 }
 .li__nav {
-	font-size: 15pt;
+	font-size: 13pt;
 }
 .a__nav {
-	padding: 18px;
+	padding: 20px;
 	text-decoration-color: var(--color_letra_secundario);
 	text-decoration-thickness: 2px;
 }
