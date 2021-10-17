@@ -23,7 +23,7 @@
 .modal_visible {
 	position: absolute;
 	transform: scale(0) translate(120px);
-	transition: transform 0.5s;
+	transition: all 0.5s;
 }
 
 .modal_invisible {
@@ -42,7 +42,7 @@
 	width: 100%;
 	height: 100%;
 	transform: scale(1);
-	transition: transform 0.5s;
+	transition: all 0.5s;
 }
 
 .ventana__modal {
@@ -569,7 +569,7 @@
 		font-size: 0.8125em;
 		margin: 3px 0;
 		font-weight: bold;
-		padding-left: 10px;
+		padding-left: 8px;
 	}
 
 	.nav__header {
