@@ -840,7 +840,6 @@
 	.logo__nav {
 		color: var(--color_letra_principal);
 		font-size: 1rem;
-		margin: 3px 0;
 		font-weight: bold;
 	}
 
@@ -905,10 +904,10 @@
 		height: 220px;
 	}
 	.nombre {
-		font-size: 37px;
+		font-size: 35px;
 	}
 	.profesion {
-		font-size: 38px;
+		font-size: 36px;
 	}
 	/* Section Sobre Mi */
 	.sobre_mi {
