@@ -1,6 +1,3 @@
-/* Corregir cuando este ehcada la pantalla el ancho y el largo */
-/* En modelo movil la transicion es muy lenta */
-/* Cambiar las imagenes a otro formato wsep */
 * {
 	padding: 0px;
 	margin: 0px;
@@ -80,13 +77,15 @@
 	justify-items: center;
 }
 .modal__button {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-evenly;
 	text-align: center;
-	font-size: 0.85em;
+	font-size: 0.75em;
 	color: white;
-	width: 9.45em;
-	height: 2.92em;
-	padding: 0.625em 0;
-	margin: 0.625em;
+	width: 13em;
+	padding: 0.75em;
+	margin: 0.525em;
 	background-color: var(--color_letra_secundario);
 	box-shadow: 1px 1px 10px var(--color_fondo_cartas);
 	border: 2px solid var(--color_fondo_cartas);
@@ -113,7 +112,6 @@
 }
 
 /* Fin */
-/* ************* */
 /* Clases del header */
 .header {
 	background-color: var(--color_header_footer);
@@ -127,7 +125,6 @@
 	justify-content: space-around;
 	flex-direction: row;
 	align-items: center;
-	/*Colocar el z-index para que este mas adelante y no se tape por el efecto hover cuando se pasa el mouse*/
 }
 
 /*Clases del Logo*/
@@ -181,10 +178,8 @@
 .inicio {
 	grid-area: inicio;
 	background-attachment: fixed;
-	/* background-image: url(img/background_inicio.webp) rgb(0, 0, 0, 0.1); */
 	background: url(img/pexels-tima-miroshnichenko-5380664.jpg);
 	background-size: 100% 100%;
-
 	background-repeat: no-repeat;
 	height: 100vh;
 	width: 100%;
@@ -235,7 +230,7 @@
 	margin: auto;
 	margin-top: 30px;
 	display: flex;
-	flex-direction: row; /*Cambiar este para ver centrandas las img del portafolio*/
+	flex-direction: row;
 	margin-bottom: 120px;
 }
 
@@ -261,7 +256,6 @@
 	line-height: 175%;
 }
 .sobre_mi-info {
-	/* El espacio que hay entre linea y linea del texto */
 	padding: 0px 10px;
 	font-size: 1rem;
 }
@@ -429,6 +423,9 @@
 .portafolio-container-card img {
 	cursor: pointer;
 }
+.portafolio-container-card img:hover {
+	opacity: 0.8;
+}
 
 .titulo-card__portafolio {
 	color: #fff;
@@ -560,7 +557,6 @@
 		flex-direction: row;
 		align-items: center;
 		z-index: 100;
-		/*Colocar el z-index para que este mas adelante y no se tape por el efecto hover cuando se pasa el mouse*/
 	}
 	.nav__toggle {
 		color: var(--color_letra_principal);
@@ -669,7 +665,7 @@
 		align-content: center;
 		align-items: center;
 		align-content: flex-end;
-		flex-direction: column; /*Cambiar este para ver centrandas las img del portafolio*/
+		flex-direction: column;
 	}
 	.titulo__section {
 		margin-top: 70px;
@@ -707,7 +703,6 @@
 	.sobre_mi__button-cv {
 		text-align: center;
 		width: 100%;
-		/* Cuando sea responsive colocar el boton con un ancho del 100% */
 		margin-top: 20px;
 		margin-bottom: 50px;
 		padding: 8px 0;
@@ -843,7 +838,6 @@
 		flex-direction: row;
 		align-items: center;
 		z-index: 100;
-		/*Colocar el z-index para que este mas adelante y no se tape por el efecto hover cuando se pasa el mouse*/
 	}
 	.nav__toggle {
 		color: var(--color_letra_principal);
@@ -938,11 +932,8 @@
 		align-content: center;
 		align-items: center;
 		align-content: flex-end;
-		flex-direction: column; /*Cambiar este para ver centrandas las img del portafolio*/
+		flex-direction: column;
 	}
-	/* .titulo__section {
-		margin-top: 70px;
-	} */
 
 	.linea_separadora {
 		background-color: var(--color_letra_secundario);
@@ -967,7 +958,6 @@
 	.sobre_mi__button-cv {
 		text-align: center;
 		width: 100%;
-		/* Cuando sea responsive colocar el boton con un ancho del 100% */
 		margin-top: 20px;
 		margin-bottom: 50px;
 		padding: 8px 0;
@@ -1102,7 +1092,6 @@
 	transition: opacity 0.4s;
 }
 
-/* Efecto que cambia el color de la letra en los lenguajes */
 .container-img:hover .efecto_hover {
 	opacity: 1;
 	color: white;
