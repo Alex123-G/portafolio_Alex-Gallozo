@@ -22,8 +22,8 @@
 /* Css Para el Modal */
 .modal_visible {
 	position: absolute;
-	transform: scale(0) translate(100px);
-	transition: all 0.4s ease-in;
+	transform: scale(0) translate(120px);
+	transition: transform 0.5s;
 }
 
 .modal_invisible {
@@ -42,7 +42,7 @@
 	width: 100%;
 	height: 100%;
 	transform: scale(1);
-	transition: all 0.4s ease-in-out;
+	transition: transform 0.5s;
 }
 
 .ventana__modal {
@@ -84,7 +84,7 @@
 	font-size: 0.75em;
 	color: white;
 	width: 13em;
-	padding: 0.75em;
+	padding: 0.7em;
 	margin: 0.525em;
 	background-color: var(--color_letra_secundario);
 	box-shadow: 1px 1px 10px var(--color_fondo_cartas);
@@ -110,7 +110,6 @@
 	right: 0;
 	bottom: 29%;
 }
-
 /* Fin */
 /* Clases del header */
 .header {
@@ -449,16 +448,10 @@
 
 .contactame {
 	grid-area: contactame;
-	/* width: 90%; */
 	margin: auto;
 	text-align: center;
 }
-.contactame-container-titulo {
-	text-decoration: underline;
-	text-decoration-color: var(--color_letra_secundario);
-	text-align: center;
-	font-size: 22pt;
-}
+
 .contactame-container {
 	display: flex;
 	flex-direction: row;
@@ -468,26 +461,29 @@
 	color: var(--color_letra_principal);
 }
 .contactame__caja {
-	width: 270px;
-	height: 210px;
+	width: 250px;
+	height: 200px;
 	margin: 20px 20px;
 	background-color: var(--color_header_footer);
-	border-radius: 19px;
+	border-radius: 20px;
+}
+.contactame__caja-contacto {
+	font-size: 12pt;
 }
 .contactame__caja-img {
-	width: 41%;
+	cursor: pointer;
+	width: 40%;
 	height: 52%;
-	margin-top: 2.1875em;
+	margin-top: 1.9em;
 }
 
 .link_contactame {
 	text-decoration: none;
 }
-
 .footer {
 	grid-area: footer;
 	background-color: var(--color_header_footer);
-	padding: 10px;
+	padding: 6px;
 }
 .footer__items {
 	text-align: center;
@@ -806,10 +802,9 @@
 		border: 2px solid var(--color_fondo_cartas);
 	}
 	.modal__button {
-		font-size: 0.69em;
-		padding: 0;
-		width: 9.85em;
-		height: 3.4em;
+		font-size: 0.55em;
+		padding: 8px;
+		width: 60%;
 	}
 	.btn_exit {
 		left: 44%;
@@ -817,7 +812,7 @@
 		bottom: 13%;
 	}
 	.btn_exit_unit {
-		left: 44%;
+		left: 43%;
 		right: 0;
 		bottom: 27%;
 	}
@@ -1024,7 +1019,7 @@
 		text-align: center;
 	}
 	.contactame__caja {
-		margin: 15px auto;
+		margin: 15px 12px;
 		background-color: var(--color_header_footer);
 		border-radius: 15px;
 		font-size: 1em;
