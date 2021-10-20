@@ -77,6 +77,11 @@
 	justify-content: center;
 	justify-items: center;
 }
+.modal__button-container img {
+	width: 20px;
+	height: 20px;
+}
+
 .modal__button {
 	display: flex;
 	align-items: flex-end;
@@ -91,6 +96,7 @@
 	box-shadow: 1px 1px 10px var(--color_fondo_cartas);
 	border: 2px solid var(--color_fondo_cartas);
 	border-radius: 10px;
+	font-weight: bold;
 }
 
 .btn_exit {
@@ -112,11 +118,11 @@
 	bottom: 29%;
 }
 /* Fin */
+
 /* Clases del header */
 .header {
 	background-color: var(--color_header_footer);
 	width: 100%;
-	height: 2.625em;
 	position: fixed;
 	grid-area: header;
 	overflow: hidden;
@@ -420,7 +426,6 @@
 	margin: 20px 0px;
 	background-color: var(--color_header_footer);
 	width: 43%;
-	border-radius: 5px;
 	border-radius: 7px;
 }
 .portafolio-container-card img {
@@ -548,7 +553,7 @@
 	.header {
 		background-color: var(--color_header_footer);
 		width: 100%;
-		height: 34px;
+		/* height: 34px; */
 		position: fixed;
 		grid-area: header;
 		overflow: hidden;
@@ -994,9 +999,13 @@
 	/*Section Mi portafolio*/
 	/* .portafolio {
 	} */
+
+	.portafolio {
+		width: 98%;
+	}
 	.portafolio-container-card {
 		width: 100%;
-		margin: 20px 0;
+		margin: 20px 0px;
 		background-color: var(--color_header_footer);
 	}
 	.portafolio__container-informacion {
