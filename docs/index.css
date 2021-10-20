@@ -7,9 +7,10 @@
 :root {
 	--color_letra_principal: #fff;
 	--color_letra_secundario: #4271ff;
-	--color_fondo: #000000;
-	--color_header_footer: #262e52;
-	--color_fondo_cartas: #272729;
+	--color_fondo: rgb(10, 10, 10);
+	/* --color_header_footer: #212168; */
+	--color_header_footer: #222561;
+	--color_fondo_cartas: rgb(66, 113, 255, 0.7);
 }
 .body {
 	font-size: 16pt;
@@ -63,9 +64,9 @@
 }
 
 .ventana__modal:hover {
-	background-color: rgb(38, 46, 82, 0.94);
-	box-shadow: 2px 2px 20px var(--color_fondo_cartas);
-	transition: all 0.4s;
+	background-color: rgb(33, 33, 104, 0.9);
+	box-shadow: 2px 2px 18px var(--color_fondo_cartas);
+	transition: background-color 0.4s, box-shadow 0.4s;
 }
 
 .modal__button-container {
@@ -383,10 +384,13 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-.container-img img {
-	width: 90px;
-	height: 95px;
-	padding: 15px;
+
+.logo-habilidades {
+	height: 92px;
+	padding: 12px;
+	width: 92px;
+	/* filter: brightness(200%); */
+	fill: red;
 }
 
 /*------------------------------------------- */
