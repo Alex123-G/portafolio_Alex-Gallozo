@@ -1,11 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FDFFFF;}
+</style>
 <desc>Created with Fabric.js 1.7.22</desc>
-<defs>
-</defs>
-<g transform="translate(128 128) scale(0.72 0.72)" style="">
-	<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(-175.05 -175.05000000000004) scale(3.89 3.89)" >
-	<path d="M 23.575 89.924 H 1.407 V 28.439 h 22.167 V 89.924 z M 5.835 85.496 h 13.311 v -52.63 H 5.835 V 85.496 z M 12.491 25.072 C 5.603 25.072 0 19.467 0 12.576 c 0 -6.893 5.603 -12.5 12.491 -12.5 c 6.887 0 12.491 5.608 12.491 12.5 C 24.982 19.467 19.379 25.072 12.491 25.072 z M 12.491 4.504 c -4.446 0 -8.063 3.621 -8.063 8.072 c 0 4.448 3.617 8.068 8.063 8.068 c 4.446 0 8.063 -3.619 8.063 -8.068 C 20.554 8.125 16.937 4.504 12.491 4.504 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-	<path d="M 90 89.924 H 67.846 V 59.962 c 0 -8.75 -1.048 -12.915 -7.001 -12.915 c -6.14 0 -8.422 3.371 -8.422 12.439 v 30.438 H 30.269 V 28.439 h 21.439 v 4.046 c 3.376 -3.03 8.363 -5.459 14.806 -5.459 C 87.21 27.025 90 41.883 90 56.417 V 89.924 z M 72.274 85.496 h 13.298 v -29.08 c 0 -15.411 -3.189 -24.963 -19.059 -24.963 c -7.81 0 -12.864 4.328 -14.819 8.035 l -0.623 1.181 h -3.792 v -7.803 H 34.697 v 52.63 h 13.298 v -26.01 c 0 -4.614 0 -16.867 12.85 -16.867 c 11.429 0 11.429 11.282 11.429 17.343 V 85.496 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-</g>
+<g transform="translate(128 128) scale(0.72 0.72)">
+	<g transform="translate(-175.05 -175.05000000000004) scale(3.89 3.89)">
+		<path class="st0" d="M23.6,89.9H1.4V28.4h22.2L23.6,89.9L23.6,89.9z M5.8,85.5h13.3V32.9H5.8V85.5z M12.5,25.1
+			C5.6,25.1,0,19.5,0,12.6C0,5.7,5.6,0.1,12.5,0.1C19.4,0.1,25,5.7,25,12.6C25,19.5,19.4,25.1,12.5,25.1z M12.5,4.5
+			c-4.4,0-8.1,3.6-8.1,8.1c0,4.4,3.6,8.1,8.1,8.1s8.1-3.6,8.1-8.1C20.6,8.1,16.9,4.5,12.5,4.5z"/>
+		<path class="st0" d="M90,89.9H67.8V60c0-8.8-1-12.9-7-12.9c-6.1,0-8.4,3.4-8.4,12.4v30.4H30.3V28.4h21.4v4c3.4-3,8.4-5.5,14.8-5.5
+			C87.2,27,90,41.9,90,56.4V89.9z M72.3,85.5h13.3V56.4c0-15.4-3.2-25-19.1-25c-7.8,0-12.9,4.3-14.8,8l-0.6,1.2h-3.8v-7.8H34.7v52.6
+			H48v-26c0-4.6,0-16.9,12.9-16.9c11.4,0,11.4,11.3,11.4,17.3V85.5z"/>
+	</g>
 </g>
 </svg>

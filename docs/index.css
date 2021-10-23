@@ -470,20 +470,22 @@
 	color: var(--color_letra_principal);
 }
 .contactame__caja {
-	width: 250px;
+	width: 260px;
 	height: 200px;
-	margin: 20px 20px;
+	margin: 15px 20px;
 	background-color: var(--color_header_footer);
 	border-radius: 20px;
 }
 .contactame__caja-contacto {
-	font-size: 12pt;
+	color: var(--color_letra_principal);
+	padding-top: 10px;
+	font-size: 11pt;
 }
 .contactame__caja-img {
 	cursor: pointer;
 	width: 40%;
 	height: 52%;
-	margin-top: 1.9em;
+	margin-top: 1.5em;
 }
 
 .link_contactame {
