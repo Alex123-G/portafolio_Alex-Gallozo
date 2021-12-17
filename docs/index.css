@@ -1,14 +1,14 @@
 * {
 	padding: 0px;
 	margin: 0px;
-	color: var(--color_letra_principal);
 	scroll-behavior: smooth;
+	color: var(--color_letra_principal);
 }
+
 :root {
 	--color_letra_principal: #fff;
 	--color_letra_secundario: #4271ff;
 	--color_fondo: rgb(10, 10, 10);
-	/* --color_header_footer: #212168; */
 	--color_header_footer: #222561;
 	--color_fondo_cartas: rgb(66, 113, 255, 0.7);
 }
@@ -24,7 +24,7 @@
 .modal_visible {
 	position: absolute;
 	transform: scale(0) translate(120px);
-	transition: transform 0.5s;
+	transition: transform 0.4s ease-in-out;
 }
 
 .modal_invisible {
@@ -43,7 +43,7 @@
 	width: 100%;
 	height: 100%;
 	transform: scale(1);
-	transition: transform 0.5s, background-color 0.5s;
+	transition: transform 0.4s, background-color 0.4s;
 }
 
 .ventana__modal {
@@ -380,7 +380,7 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-.sql_server {
+.nodejs {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -395,7 +395,6 @@
 	height: 92px;
 	padding: 12px;
 	width: 92px;
-	/* filter: brightness(200%); */
 	fill: red;
 }
 
@@ -502,7 +501,7 @@
 	color: var(--color_letra_principal);
 }
 
-/* Responsive para laptops y PcS */
+/* Responsive para laptops y PCs */
 @media screen and (max-width: 1250px) {
 	/* Mi Portafolio */
 	.portafolio {
